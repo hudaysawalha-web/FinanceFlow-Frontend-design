@@ -20,8 +20,132 @@
     @apply hidden lg:block bg-blue rounded-full px-8 py-5 text-base/4 font-bold tracking-[1.6px] hover:bg-hover-button transition-colors duration-300;
   }
 
+  .btn-app-store {
+    @apply flex items-center gap-2.5 bg-[#2563EB] text-white text-base font-bold tracking-[0.9px] py-6.75 px-10 rounded-full border-none cursor-pointer transition-all hover:bg-[#1E4BD2] active:scale-[0.98];
 
+  }
+ .header-main {
+    @apply w-full overflow-x-hidden py-6 px-6;
+  }
+
+ /* MOBILE STYLES */
+.footer-main {
+  @apply bg-dark-blue w-full overflow-x-hidden px-5 pt-10 pb-6 mt-20;
 }
+
+.nav_footer_container {
+  @apply flex flex-col items-center gap-6;
+}
+
+.footer-social-list {
+  @apply flex items-center gap-4;
+}
+
+.footer-content-row {
+  @apply flex flex-col gap-6 px-4 pb-10 pt-6;
+}
+
+.footer-menu-wrapper {
+  @apply w-full;
+}
+
+.footer-menu-inner {
+  @apply w-full;
+}
+
+.footer-menu-title {
+  @apply text-lg font-bold tracking-[0.9px] border-b border-white pb-6;
+}
+
+.footer-menu-list {
+  @apply grid grid-flow-col grid-rows-3 justify-between gap-3 pt-6;
+}
+
+.footer-card {
+  @apply flex flex-col items-start bg-white/10 rounded-[40px] py-8 px-6;
+}
+
+.footer-card-title {
+  @apply text-lg leading-6.5 font-bold tracking-[0.9px] mb-3;
+}
+
+.footer-card-text {
+  @apply text-lg leading-8 font-normal mb-6;
+}
+
+.footer-buttons {
+  @apply flex flex-col  items-center gap-3 mb-6 w-full;
+}
+
+.btn-app-store {
+  @apply w-full  flex items-center justify-center gap-2 ;
+}
+
+.footer-divider {
+  @apply border-t border-white/30 px-3.5;
+}
+
+.footer-copyright {
+  @apply text-base/26 pb-0 text-center;
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 768px) {
+
+  .header-main {
+    @apply w-full overflow-x-hidden py-[33px] px-[133px];
+  }
+
+  .footer-main {
+    @apply px-33.25 pt-14 pb-8 mt-30;
+  }
+
+  .nav_footer_container {
+    @apply flex-row items-center justify-between ;
+  }
+
+  .footer-content-row {
+    @apply flex-row gap-45 px-6 pb-32 pt-23;
+  }
+
+  .footer-menu-wrapper {
+    @apply w-127.25 items-start justify-between;
+  }
+
+  .footer-menu-inner {
+    @apply max-w-[280px];
+  }
+
+  .footer-menu-title {
+    @apply pb-9;
+  }
+
+  .footer-menu-list {
+    @apply grid grid-flow-col grid-rows-3 justify-between gap-4.5 pt-9;
+  }
+
+  .footer-card {
+    @apply py-11 pl-13.75 pr-13.75;
+  }
+
+  .footer-buttons {
+    @apply flex-row gap-4;
+  }
+
+  .btn-app-store {
+    @apply w-auto;
+  }
+  .footer-copyright {
+  @apply text-base/26 pb-0 text-left;
+}
+}
+
+
+  
+}
+
+
+
 
 @layer utilities {
   .row {
@@ -29,7 +153,7 @@
   }
 
   .nav_container {
-    @apply mx-auto flex items-center justify-between py-6
+    @apply   flex items-center justify-between ;
   }
 
   .social_icons {
@@ -39,6 +163,7 @@
   .social_icons img {
     @apply w-5 h-5;
   }
+
 }
 
 @layer base {

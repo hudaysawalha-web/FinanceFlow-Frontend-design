@@ -15,19 +15,21 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-main">
         <!--Navigation-->
-        <div class=" container nav_container">
-            <nav class="flex items-center gap-8">
+        <div class=" container nav_container ">
+            <nav class="flex items-center gap-8 max-sm:flex-1">
 
-                <a class="logo" href="./Homepage.html"><img src="../assets/images/logo Finaince flow.svg"
-                        alt="logo of Finance Flow"></a>
+                <a class="logo block max-md:hidden" href="./Homepage.html"><img
+                        src="../assets/images/logo Finaince flow.svg" alt="logo of Finance Flow"></a>
+
+                <a class="logo hidden max-md:block" href="./Homepage.html "><img
+                        src="../assets/images/logo Finance flow for phone.svg" alt="logo of Finance Flow"></a>
+
+                <div class="w-px h-16 bg-dark-blue block max-md:hidden"></div>
 
 
-                <div class="w-px h-16 bg-dark-blue"></div>
-
-
-                <div class="list">
+                <div class="list block max-md:hidden">
                     <ul class="flex  gap-7 ">
                         <li class="nav_link"><a href="./Homepage.html">HOME</a></li>
                         <li class="nav_link"><a href="#">ABOUT</a></li>
@@ -37,258 +39,67 @@
                         <li class="nav_link"><a href="#"> CONTACT US</a> </li>
                     </ul>
                 </div>
+
             </nav>
+            <button class="logo hidden max-md:block bg-blue px-2.5 pt-3.25 pb-3 rounded-full "><img
+                    src="../assets/images/menu.svg" alt="menu"></button>
             <button class="btn_download ">
                 DOWNLOAD APP
             </button>
         </div>
     </header>
-    <main>
-        <!--Hero section-->
-        <section id="hero">
-            <h1>Buy, trade, and hold 350+ cryptocurrencies</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean dis
-                placerat.</p>
-            <button>DOWNLOAD APP</button>
-            <!--should change the href attribute after I add the page-->
-            <a href="#">VIEW PRICING</a>
-            <img alt="laptopimage" src="../assets/images/home page imag and icons/Vector.webp" />
-            <h5>Finance flow has been featured on</h5>
-            <img src="../assets/images/home page imag and icons/logos.webp" alt="logos of the companys ">
-        </section>
-        <!--Features section-->
-        <section id="features">
-            <h2>Build your crypto portfolio</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
 
-
-            <div class="card">
-                <img src="../assets/images/home page imag and icons/div.webp" alt="send and receive logo">
-                <div class="container">
-                    <h3><b>Send & Receive</b></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../assets/images/home page imag and icons/wallet.webp" alt="secure wallet logo">
-                <div class="container">
-                    <h3><b>100% Secure Wallet</b></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.
-                    </p>
-                </div>
-            </div>
-
-            <div class="main-card">
-                <div class="container">
-                    <h3><b>iOS & Android App</b></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In amet, morbi non at sed neque.</p>
-                </div>
-                <img src="../assets/images/home page imag and icons/iPhones.webp" alt="iphone image">
-            </div>
-
-
-            <div class="card">
-                <img src="../assets/images/home page imag and icons/charts logo.webp" alt="charts logo">
-                <div class="container">
-                    <h3><b>Trading Charts</b></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../assets/images/home page imag and icons/trading.webp" alt="trading logo">
-                <div class="container">
-                    <h3><b>Real Time Trading</b></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.
-                    </p>
-                </div>
-            </div>
-            <button>Download App</button>
-        </section>
-        <!--Rewards section-->
-        <section id="rewards-section">
-            <img src="../assets/images/home page imag and icons/Group 2.webp" alt="two phones image">
-            <h2>Earn daily rewards on your idle tokens</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
-            <ol>
-                <li><img src="../assets/images/home page imag and icons/down arrow.webp" alt="down arrow"> Lowest fees
-                    in market</li>
-                <li><img src="../assets/images/home page imag and icons/power.webp" alt="power icon"> Fast and secure
-                    transactions</li>
-                <li><img src="../assets/images/home page imag and icons/lock.webp" alt="lock icon"> 256-bit secure
-                    encryption</li>
-            </ol>
-
-            <img src="../assets/images/home page imag and icons/Apple Computers.webp" alt="computer image">
-            <h2>Earn daily rewards on your idle tokens</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
-            <ol>
-                <li><img src="../assets/images/home page imag and icons/shield.webp" alt="shield icon"> 100% Private
-                    data</li>
-                <li><img src="../assets/images/home page imag and icons/rate.webp" alt="rate icon"> 99.99% Uptime
-                    guarantee</li>
-                <li><img src="../assets/images/home page imag and icons/chat.webp" alt="chat icon">24/7 Dedicated
-                    support</li>
-            </ol>
-
-        </section>
-
-        <section id="explore-section">
-            <h2>Explore endless possibilities with FinanceFlow</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
-            <button>Download App</button>
-            <img src="../assets/images/home page imag and icons/twophonesforexplore.webp" alt="two phones image">
-
-        </section>
-
-
-        <section id="reviews-section">
-            <h2>What our users say?</h2>
-            <button>Download App</button>
-
-            <div class="review-card">
-                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et
-                    pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in”
-                </p>
-                <img src="../assets/images/home page imag and icons/Avatar 1.webp" alt="avatar image">
-                <h3><b>John carter</b></h3>
-                <h4>Role, Company</h4>
-
-            </div>
-
-            <div class="review-card">
-                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et
-                    pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in”
-                </p>
-                <img src="../assets/images/home page imag and icons/Avatar 2.webp" alt="avatar image">
-                <h3><b>John carter</b></h3>
-                <h4>Role, Company</h4>
-        </section>
-
-        <section id="get-started-section">
-            <h2>Get started today</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
-            <ul>
-                <li><img src="../assets/images/home page imag and icons/Download.webp" alt="Download icon"> Download app
-                </li>
-                <li><img src="../assets/images/home page imag and icons/person.webp" alt="User icon"> Create a free
-                    account </li>
-                <li><img src="../assets/images/home page imag and icons/Money.webp" alt="Money icon"> Start trading</li>
-            </ul>
-            <!--this should be tag video <video> <source src="movie.mp4" type="video/mp4"></video> but i don't have video now -->
-            <img src="../assets/images/home page imag and icons/video.webp" alt="videoget started image">
-
-        </section>
-
-        <section id="news-preview">
-            <h2>Browse our latest news</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non neque orci amet, amet .</p>
-            <div class="news-card">
-                <img src="../assets/images/home page imag and icons/News 1.webp" alt="news image">
-                <div class="tag">Products</div>
-                <h3><b>The Basics about Cryptocurrency</b></h3>
-                <p>Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.
-                </p>
-                <div class="news-card-footer">
-                    <img src="../assets/images/home page imag and icons/Avatar 3.webp" alt="avatar image">
-                    <h4>Alex Turner</h4>
-                    <p>August 2, 2021</p>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="../assets/images/home page imag and icons/News 1.webp" alt="news image">
-                <tag>Products</tag>
-                <h3><b>The Basics about Cryptocurrency</b></h3>
-                <p>Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.
-                </p>
-                <div class="news-card-footer">
-                    <img src="../assets/images/home page imag and icons/Avatar 3.webp" alt="avatar image">
-                    <h4>Alex Turner</h4>
-                    <p>August 2, 2021</p>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="../assets/images/home page imag and icons/News 1.webp" alt="news image">
-                <tag>Products</tag>
-                <h3><b>The Basics about Cryptocurrency</b></h3>
-                <p>Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.
-                </p>
-                <div class="news-card-footer">
-                    <img src="../assets/images/home page imag and icons/Avatar 3.webp" alt="avatar image">
-                    <h4>Alex Turner</h4>
-                    <p>August 2, 2021</p>
-                </div>
-            </div>
-
-            <button>View All Articles</button>
-
-
-        </section>
-
-        <section id="Download-section">
-            <h2>Download our app</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non neque orci amet, amet .</p>
-            <div class="card-download">
-                <h2><b>Download for iOS</b></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla integer in pellentesque
-                    tortor semper elementum. Felis.</p>
-                <button><img src="../assets/images/Footer/appleicon.svg" alt="App Store"> App Store</button>
-                <img src="../assets/images/home page imag and icons/iPhonesdown.webp" alt="iPhone download">
-            </div>
-            <div class="card-download">
-                <h2><b>Download for Android</b></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla integer in pellentesque
-                    tortor semper elementum. Felis.</p>
-                <button><img src="../assets/images/Footer/playstore.svg" alt="Play Store"> PLAY STORE</button>
-                <img src="../assets/images/home page imag and icons/Samsung Galaxys.webp" alt="Samsung Galaxy download">
-            </div>
-
-        </section>
-    </main>
 
 
     <!--Footer-->
-    <footer>
-        <div class="container nav_container">
+    <footer class="footer-main">
+
+        <div class="nav_footer_container  ">
             <img src="../assets/images/logo Finaince flow.svg" alt="logo of Finance Flow">
-
-
-            <ul class="row justify-between gap-4">
-                <li class="social_icons"><a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="../assets/images/Footer/instag.svg" alt="instagram logo"></a></li>
-                <li class="social_icons"><a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="../assets/images/Footer/facebook.svg" alt="facebook logo"></a></li>
-                <li class="social_icons"><a href="https://www.linkedin.com" target="_blank" rel="noopener"><img src="../assets/images/Footer/linkedin.svg" alt="LinkedIn logo"></a></li>
-            </ul>
-
-
-        </div>
-
-
-        <div class="footer-links">
-            <!--should change the href attribute after I add the pages -->
-            <h4>Menu</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">PRICING</a></li>
-                <li><a href="#">TOKENS</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT US</a></li>
+            <ul class="footer-social-list ">
+                <li class="social_icons"><a href="https://www.instagram.com" target="_blank" rel="noopener"><img
+                            src="../assets/images/Footer/instag.svg" alt="instagram logo"></a></li>
+                <li class="social_icons"><a href="https://www.facebook.com" target="_blank" rel="noopener"><img
+                            src="../assets/images/Footer/facebook.svg" alt="facebook logo"></a></li>
+                <li class="social_icons"><a href="https://www.linkedin.com" target="_blank" rel="noopener"><img
+                            src="../assets/images/Footer/linkedin.svg" alt="LinkedIn logo"></a></li>
             </ul>
         </div>
 
+        <div class="footer-content-row ">
+            <!-- MENU -->
+            <div class="footer-menu-wrapper">
+                <div class="footer-menu-inner">
+                    <h5 class="footer-menu-title">MENU</h5>
+                    <ul class="footer-menu-list">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PRICING</a></li>
+                        <li><a href="#">TOKENS</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
 
-        <div id="card-footer-download">
-            <h5>Download our Application</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla integer </p>
-            <button><img src="../assets/images/Footer/appleicon.svg" alt="App Store"> App Store</button>
-            <button><img src="../assets/images/Footer/playstore.svg" alt="Play Store"> PLAY STORE</button>
+            <!-- CARD -->
+            <div class="footer-card ">
+                <p class="footer-card-title">DOWNLOAD OUR APPLICATION</p>
+                <p class="footer-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Mauris sed nulla
+                    integer</p>
+                <div class="footer-buttons ">
+                    <button class="btn-app-store"><img src="../assets/images/Footer/appleicon.svg" alt="App Store"> APP
+                        STORE</button>
+                    <button class="btn-app-store"><img src="../assets/images/Footer/playstore.svg" alt="Play Store">
+                        PLAY STORE</button>
+                </div>
+            </div>
         </div>
+
+        <hr class="footer-divider">
+        <p class="footer-copyright  ">All rights reserved</p>
     </footer>
+
 </body>
 
 </html>
