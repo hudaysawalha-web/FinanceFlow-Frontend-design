@@ -31,7 +31,7 @@
 
                 <div class="list block max-md:hidden">
                     <ul class="flex  gap-7 ">
-                        <li class="nav_link"><a href="./Homepage.html">HOME</a></li>
+                        <li class="nav_link "><a href="./Homepage.html">HOME</a></li>
                         <li class="nav_link"><a href="#">ABOUT</a></li>
                         <li class="nav_link"><a href="#">PRICING</a></li>
                         <li class="nav_link"><a href="#">TOKENS</a></li>
@@ -41,13 +41,62 @@
                 </div>
 
             </nav>
-            <button class="logo hidden max-md:block bg-blue px-2.5 pt-3.25 pb-3 rounded-full "><img
+            <button id="menu-toggle" class="logo hidden max-md:block bg-blue px-2.5 pt-3.25 pb-3 rounded-full "><img
                     src="../assets/images/menu.svg" alt="menu"></button>
-            <button class="btn_download ">
+
+
+            <button class="btn-download block max-md:hidden">
                 DOWNLOAD APP
             </button>
         </div>
+        <section class="hidden">
+            <button id="close-menu" class="logo hidden  bg-blue px-2.5 pt-3.25 pb-3 rounded-full "><img
+                    src="../assets/images/x menu.svg" alt="close menu"></button>
+
+            <div class="list-phone-menu  w-[616px] flex flex-col  items-center">
+                <ul>
+                    <li class="nav_link-list"><a href="./Homepage.html">HOME</a></li>
+                    <li class="nav_link-list"><a href="#">ABOUT</a></li>
+                    <li class="nav_link-list"><a href="#">PRICING</a></li>
+                    <li class="nav_link-list"><a href="#">TOKENS</a></li>
+                    <li class="nav_link-list"><a href="#">BLOG</a></li>
+                    <li class="nav_link-list"><a href="#"> CONTACT US</a> </li>
+                    <li><button class="btn_download ">
+                            DOWNLOAD APP
+                        </button></li>
+                </ul>
+
+            </div>
+        </section>
     </header>
+    <main class="m-0 p-0 overflow-x-hidden">
+        <!--Hero section-->
+        <section
+            class=" flex items-center pl-[133px] pr-0 mb-[170px] mt-[86px] max-md:flex-col max-md:items-center max-md:pl-0 ">
+            <div class="flex-1 ">
+                <h1>Buy, trade, and hold <br> 350+ cryptocurrencies</h1>
+                <p class="custom-p py-[9px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat <br> nulla
+                    suspendisse tortor aenean dis
+                    placerat.</p>
+                <div class="hero-buttons">
+                    <button class="btn-download ">DOWNLOAD APP</button>
+                    <!--should change the href attribute after I add the page-->
+                    <a class="btn-secondary" href="#">VIEW PRICING</a>
+                </div>
+            </div>
+            <div class=" flex items-end shrink-0 ">
+                <img alt="laptopimage"
+                    src="../assets/images/home page imag and icons/hero section/Apple Computers.webp "
+                    class="block w-auto h-auto max-h-full object-contain block max-md:hidden" />
+
+                <img alt="laptopimage"
+                    src="../assets/images/home page imag and icons/hero section/full Apple Computers.webp"
+                    class="block w-auto h-auto max-h-full object-contain hidden max-md:block" />
+
+            </div>
+        </section>
+    </main>
+
 
 
 
