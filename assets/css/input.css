@@ -52,10 +52,12 @@
   .nav_footer_container {
     @apply flex flex-col items-center gap-6;
   }
+
+  .features-cards{
+    @apply flex flex-col items-center gap-8 pb-[48px] px-41.5 mb-12 ;
+  }
   .card-protofolio {
       @apply bg-dark-blue rounded-[40px] pl-[23px] py-[48px] pr-[22px] flex flex-col items-start text-left gap-[20px] ;
-
-    
     }
 
   .footer-social-list {
@@ -129,6 +131,11 @@
       @apply w-auto inline-flex px-8 py-5;
     }
 
+    .features-cards {
+      @apply grid grid-cols-[325fr_477fr_325fr] gap-8 pb-[48px] px-41.5 mb-12;
+    }
+
+   
     .card-protofolio {
       @apply bg-dark-blue rounded-[40px] pl-[23px] py-[48px] pr-[22px] flex flex-col items-start text-left gap-[20px] ;
 
@@ -137,6 +144,7 @@
       }
     }
 
+    
     .footer-main {
       @apply px-33.25 pt-14 pb-8 mt-30;
     }
@@ -199,6 +207,10 @@
   .social_icons img {
     @apply w-5 h-5;
   }
+
+   .main-card{
+      @apply bg-blue rounded-[40px] flex flex-col  text-start pt-8.5 px-15.25  col-start-2 row-start-1 row-span-2 ;
+    }
 }
 
 @layer base {
