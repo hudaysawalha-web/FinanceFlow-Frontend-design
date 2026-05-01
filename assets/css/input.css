@@ -53,12 +53,13 @@
     @apply flex flex-col items-center gap-6;
   }
 
-  .features-cards{
-    @apply flex flex-col items-center gap-8 pb-[48px] px-41.5 mb-12 ;
+  .features-cards {
+    @apply flex flex-col items-center gap-8 pb-[48px] px-41.5 mb-12;
   }
+
   .card-protofolio {
-      @apply bg-dark-blue rounded-[40px] pl-[23px] py-[48px] pr-[22px] flex flex-col items-start text-left gap-[20px] ;
-    }
+    @apply bg-dark-blue rounded-[40px] pl-[23px] py-[48px] pr-[22px] flex flex-col items-start text-left gap-[20px];
+  }
 
   .footer-social-list {
     @apply flex items-center gap-4;
@@ -135,16 +136,15 @@
       @apply grid grid-cols-[325fr_477fr_325fr] gap-8 pb-[48px] px-41.5 mb-12;
     }
 
-   
-    .card-protofolio {
-      @apply bg-dark-blue rounded-[40px] pl-[23px] py-[48px] pr-[22px] flex flex-col items-start text-left gap-[20px] ;
 
-      p{
+    .card-protofolio {
+      @apply bg-dark-blue rounded-[40px] pl-[23px] py-[48px] pr-[22px] flex flex-col items-start text-left gap-[20px];
+
+      p {
         @apply w-[279px];
       }
     }
 
-    
     .footer-main {
       @apply px-33.25 pt-14 pb-8 mt-30;
     }
@@ -208,9 +208,17 @@
     @apply w-5 h-5;
   }
 
-   .main-card{
-      @apply bg-blue rounded-[40px] flex flex-col  text-start pt-8.5 px-15.25  col-start-2 row-start-1 row-span-2 ;
-    }
+  .main-card {
+    @apply bg-blue rounded-[40px] flex flex-col text-start pt-8.5 px-15.25 col-start-2 row-start-1 row-span-2;
+  }
+
+  .daily-rewards-list {
+    @apply flex flex-col items-start gap-4.25;
+  }
+
+  .daily-rewards-points{
+    @apply flex items-center gap-4.25;
+  }
 }
 
 @layer base {
@@ -236,7 +244,7 @@
     margin-bottom: 20px;
   }
 
-  h3{
+  h3 {
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
@@ -244,7 +252,7 @@
     margin-bottom: 7px;
   }
 
-  p{
+  p {
     font-size: 16px;
     line-height: 26px;
     font-weight: normal;
