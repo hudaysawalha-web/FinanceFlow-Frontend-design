@@ -52,6 +52,11 @@
   .nav_footer_container {
     @apply flex flex-col items-center gap-6;
   }
+  .card-protofolio {
+      @apply bg-dark-blue rounded-[40px] pl-[23px] py-[48px] pr-[22px] flex flex-col items-start text-left gap-[20px] ;
+
+    
+    }
 
   .footer-social-list {
     @apply flex items-center gap-4;
@@ -115,13 +120,21 @@
       @apply flex-row justify-start gap-7 py-10.5;
     }
 
-   
+
     .btn-download {
       @apply w-auto inline-flex px-8 py-5 mb-0;
     }
 
     .btn-secondary {
       @apply w-auto inline-flex px-8 py-5;
+    }
+
+    .card-protofolio {
+      @apply bg-dark-blue rounded-[40px] pl-[23px] py-[48px] pr-[22px] flex flex-col items-start text-left gap-[20px] ;
+
+      p{
+        @apply w-[279px];
+      }
     }
 
     .footer-main {
@@ -203,11 +216,28 @@
     letter-spacing: -1px;
   }
 
-  /* Desktop heading (1024px and above) */
-  @media (min-width: 1024px) {
-    h1 {
-      font-size: 66px;
-      line-height: 80px;
-    }
+  h2 {
+    font-size: 42px;
+    line-height: 55px;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin-bottom: 20px;
   }
+
+  h3{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    margin-bottom: 7px;
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    letter-spacing: 0;
+  }
+
+
 }
