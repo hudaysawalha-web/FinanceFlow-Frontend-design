@@ -54,7 +54,7 @@
   }
 
   .features-cards {
-    @apply flex flex-col items-center gap-8 pb-[48px] px-41.5 mb-12;
+    @apply flex flex-col items-start gap-8 pb-[48px] px-41.5 mb-12;
   }
 
   .card-protofolio {
@@ -141,7 +141,30 @@
       @apply bg-dark-blue rounded-[40px] pl-[23px] py-[48px] pr-[22px] flex flex-col items-start text-left gap-[20px];
 
       p {
-        @apply w-[279px];
+        @apply w-[279px] mb-0;
+      }
+    }
+
+    .news-card {
+      @apply bg-dark-blue rounded-[40px] w-[30%] px-[23px];
+
+      .tag {
+        @apply rounded-full bg-blue text-center w-max px-3 py-1.5 text-sm font-medium tracking-[0.9px] mb-4;
+      }
+
+      .news-card-footer {
+        @apply flex items-center border-t border-white/10 gap-3.75 pt-6.5 pb-8 mt-[39px];
+      }
+
+      h3 {
+        @apply text-[22px] leading-7.75 font-bold mb-3;
+      }
+
+      h4{
+        @apply text-[18px] leading-4.5 font-bold;
+      }
+      p{
+        @apply text-lg leading-8 font-normal ;
       }
     }
 
@@ -216,7 +239,7 @@
     @apply flex flex-col items-start gap-4.25;
   }
 
-  .daily-rewards-points{
+  .daily-rewards-points {
     @apply flex items-center gap-4.25;
   }
 }
@@ -257,6 +280,7 @@
     line-height: 26px;
     font-weight: normal;
     letter-spacing: 0;
+
   }
 
 
