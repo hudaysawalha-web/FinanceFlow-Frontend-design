@@ -33,7 +33,7 @@
   }
 
   .btn-app-store {
-    @apply bg-[#2563EB] text-white text-base font-bold tracking-[0.9px] py-6.75 px-10 rounded-full border-none cursor-pointer transition-all hover:bg-[#1E4BD2] active:scale-[0.98] w-full flex items-center justify-center gap-2;
+    @apply bg-[#2563EB] text-white text-base font-bold tracking-[0.9px] py-6.75 px-8 rounded-full border-none cursor-pointer transition-all hover:bg-[#1E4BD2] active:scale-[0.98] w-[210px] flex items-center justify-center gap-2;
   }
 
   .header-main {
@@ -44,7 +44,11 @@
     @apply text-[16px] leading-6.5 font-normal;
   }
 
+
   /* MOBILE STYLES (applies up to 1023px) */
+  .card-download{
+    @apply bg-dark-blue rounded-[40px] pl-[48px] pr-[72px] pt-[48px] flex flex-col gap-[16px]  text-left pb-0;
+  }
   .footer-main {
     @apply bg-dark-blue w-full overflow-x-hidden px-5 pt-10 pb-6 mt-20;
   }
@@ -222,9 +226,7 @@
       @apply flex-row gap-4;
     }
 
-    .btn-app-store {
-      @apply w-auto;
-    }
+    
 
     .footer-copyright {
       @apply text-base/26 pb-0 text-left;
