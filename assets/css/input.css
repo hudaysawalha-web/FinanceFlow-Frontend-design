@@ -51,11 +51,11 @@
   }
 
   .review-card {
-    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left gap-[25px]  opacity-45 backdrop-blur-xs scale-95 ;
+    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left gap-[25px] opacity-45 backdrop-blur-xs scale-95;
   }
 
   .review-card-active {
-    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left gap-[25px]  opacity-100 scale-100 ;
+    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left gap-[25px] opacity-100 scale-100;
   }
 
   .footer-main {
@@ -78,12 +78,43 @@
     @apply mx-4 my-[80px];
   }
 
+  .tag {
+    @apply rounded-full bg-blue text-center w-max px-3 py-1.5 text-sm font-medium tracking-[0.9px] mb-6 relative z-10 -mt-4;
+  }
+
+  .pricing-cards {
+    @apply flex flex-col gap-4;
+  }
+
+  .pricing-card-header {
+    @apply flex flex-col gap-4 mb-10;
+
+  }
+
+  .pricing-card-features {
+    @apply flex flex-col gap-[54px];
+
+    p {
+      @apply font-bold uppercase;
+    }
+
+    .features-list {
+      @apply flex flex-col gap-4;
+
+      li {
+        @apply flex items-start gap-4;
+      }
+    }
+
+    .btn-download {
+      @apply w-full;
+    }
+  }
+
   .news-card {
     @apply bg-dark-blue rounded-[40px] px-[23px] relative;
 
-    .tag {
-      @apply rounded-full bg-blue text-center w-max px-3 py-1.5 text-sm font-medium tracking-[0.9px] mb-6 relative z-10 -mt-4;
-    }
+
 
     .cover-card {
       @apply overflow-hidden rounded-t-[40px] -mx-[23px] -mt-0 w-[calc(100%+46px)] relative z-0;
@@ -105,6 +136,10 @@
       @apply text-lg leading-8 font-normal;
     }
 
+  }
+
+  .pricing-card {
+    @apply bg-dark-blue rounded-[40px] px-[30px] py-[48px] gap-[40px];
   }
 
   .footer-social-list {
@@ -157,6 +192,11 @@
 
   /* DESKTOP STYLES (1024px and above) */
   @media (min-width: 1024px) {
+
+    .pricing-cards {
+      @apply flex flex-row gap-6.5;
+    }
+
     .header-main {
       @apply w-full overflow-x-hidden py-[33px] px-[133px];
     }
@@ -206,6 +246,8 @@
     .nav_footer_container {
       @apply flex-row items-center justify-between;
     }
+
+
 
     .footer-content-row {
       @apply flex-row gap-45 px-6 pb-32 pt-23;
