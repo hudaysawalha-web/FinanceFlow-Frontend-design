@@ -142,6 +142,14 @@
     @apply bg-dark-blue rounded-[40px] px-[30px] py-[48px] gap-[40px];
   }
 
+  .blog-par {
+    @apply flex flex-col gap-[40px] px-[205px];
+
+    .blog-par-header{
+      @apply text-[28px] font-bold leading-[30px] tracking-[0.28px] pr-[28px];
+    }
+  }
+
   .footer-social-list {
     @apply flex items-center gap-4;
   }
@@ -323,14 +331,14 @@
   }
 
   /* Mobile-first heading (applies to all devices below 1024px) */
-  h2 {
-    font-size: 38px;
-    line-height: 46px;
+  h1 {
+    font-size: 66px;
+    line-height: 80px;
     font-weight: bold;
     letter-spacing: -1px;
   }
 
-  h1 {
+  h2 {
     font-size: 42px;
     line-height: 55px;
     font-weight: bold;
