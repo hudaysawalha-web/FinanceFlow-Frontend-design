@@ -40,6 +40,9 @@
     @apply w-full overflow-x-hidden py-6 px-6;
   }
 
+  .filter{
+    @apply rounded-[40px] px-6 py-[11px] text-base/6.5 font-normal  w-full flex items-center justify-center gap-2;
+  }
  
 
 
