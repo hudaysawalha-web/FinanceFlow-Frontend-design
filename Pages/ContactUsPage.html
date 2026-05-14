@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <title>FinanceFlow</title>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-main">
+        <!--Navigation-->
+        <div class=" container nav_container ">
+            <nav class="flex items-center gap-8 max-sm:flex-1">
+
+                <a class="logo block max-md:hidden" href="./Homepage.html"><img
+                        src="../assets/images/logo Finaince flow.svg" alt="logo of Finance Flow"></a>
+
+                <a class="logo hidden max-md:block" href="./Homepage.html "><img
+                        src="../assets/images/logo Finance flow for phone.svg" alt="logo of Finance Flow"></a>
+
+                <div class="w-px h-16 bg-dark-blue block max-md:hidden"></div>
+
+
+                <div class="list block max-md:hidden">
+                    <ul class="flex  gap-7 ">
+                        <li class="nav_link "><a href="./Homepage.html" class="nav_link_unchoosen">HOME</a></li>
+                        <li class="nav_link"><a href="#" class="nav_link_unchoosen">ABOUT</a></li>
+                        <li class="nav_link"><a href="./PricingPage.html" class="nav_link_unchoosen">PRICING</a></li>
+                        <li class="nav_link"><a href="#" class="nav_link_unchoosen">TOKENS</a></li>
+                        <li class="nav_link"><a href="./BlogPage.html" class="nav_link_unchoosen">BLOG</a></li>
+                        <li class="nav_link"><a href="./ContactUsPage.html" class="nav_link_choosen"> CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+            <button id="menu-toggle" class="logo hidden max-md:block bg-blue px-2.5 pt-3.25 pb-3 rounded-full "><img
+                    src="../assets/images/menu.svg" alt="menu"></button>
+
+
+            <button class="btn-download block max-md:hidden">
+                DOWNLOAD APP
+            </button>
+        </div>
+        <section class="hidden">
+            <button id="close-menu" class="logo hidden  bg-blue px-2.5 pt-3.25 pb-3 rounded-full "><img
+                    src="../assets/images/x menu.svg" alt="close menu"></button>
+
+            <div class="list-phone-menu  w-154 flex flex-col  items-center">
+                <ul>
+                    <li class="nav_link-list"><a href="./Homepage.html">HOME</a></li>
+                    <li class="nav_link-list"><a href="#">ABOUT</a></li>
+                    <li class="nav_link-list"><a href="./PricingPage.html">PRICING</a></li>
+                    <li class="nav_link-list"><a href="#">TOKENS</a></li>
+                    <li class="nav_link-list"><a href="./BlogPage.html">BLOG</a></li>
+                    <li class="nav_link-list"><a href="#"> CONTACT US</a> </li>
+                    <li><button class="btn_download ">
+                            DOWNLOAD APP
+                        </button></li>
+                </ul>
+
+            </div>
+        </section>
+    </header>
+    <main class="m-0 p-0 overflow-x-hidden">
+        <section>
+            <div class="flex items-start lg:ml-[157px] lg:mt-[80px] lg:mb-[52px] ml-4 mb-10 mt-[48px] ">
+                <h1>Get in touch</h1>
+            </div>
+            <div class=" flex gap-[63px] lg:mx-[157px] max-md:flex-col mx-4">
+                <div class="w-full ">
+                    <form class="flex flex-col gap-6">
+                        <!-- Row 1: Name & Email -->
+                        <div class="flex flex-col lg:flex-row gap-6">
+                            <div class="form-group">
+                                <label for="fname" class="form-label">Name</label>
+                                <input type="text" id="fname" name="fname" placeholder="Full Name" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com"
+                                    class="form-input">
+                            </div>
+                        </div>
+
+                        <!-- Row 2: Company & Subject -->
+                        <div class="flex flex-col lg:flex-row gap-6">
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company</label>
+                                <input type="text" id="company" name="company" placeholder="Company Name"
+                                    class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="How can we help?"
+                                    class="form-input">
+                            </div>
+                        </div>
+
+                        <!-- Row 3: Message -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="4"
+                                class="form-input rounded-[14px]"></textarea>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Send Message" class="form-submit max-md:w-full">
+                        </div>
+                    </form>
+                </div>
+                <div class="flex flex-col gap-[32px]">
+                    <div class="flex flex-col gap-3">
+                        <h3>Want to reach us directly?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum sit id
+                            sagittis non donec egestas.</p>
+                    </div>
+                    <div class="daily-rewards-list">
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/massageicon.svg" alt="down arrow">
+                            <p>contact@example.com</p>
+                        </div>
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/massageicon.svg" alt="power icon">
+                            <p>support@example.com</p>
+                        </div>
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/massageicon.svg" alt="lock icon">
+                            <p> press@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer-main">
+
+        <div class="nav_footer_container  ">
+            <img src="../assets/images/logo Finaince flow.svg" alt="logo of Finance Flow">
+            <ul class="footer-social-list ">
+                <li class="social_icons"><a href="https://www.instagram.com" target="_blank" rel="noopener"><img
+                            src="../assets/images/Footer/instag.svg" alt="instagram logo"></a></li>
+                <li class="social_icons"><a href="https://www.facebook.com" target="_blank" rel="noopener"><img
+                            src="../assets/images/Footer/facebook.svg" alt="facebook logo"></a></li>
+                <li class="social_icons"><a href="https://www.linkedin.com" target="_blank" rel="noopener"><img
+                            src="../assets/images/Footer/linkedin.svg" alt="LinkedIn logo"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-content-row ">
+            <!-- MENU -->
+            <div class="footer-menu-wrapper">
+                <div class="footer-menu-inner">
+                    <h5 class="footer-menu-title">MENU</h5>
+                    <ul class="footer-menu-list">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PRICING</a></li>
+                        <li><a href="#">TOKENS</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="footer-card ">
+                <p class="footer-card-title">DOWNLOAD OUR APPLICATION</p>
+                <p class="footer-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Mauris sed nulla
+                    integer</p>
+                <div class="footer-buttons ">
+                    <button class="btn-app-store"><img src="../assets/images/Footer/appleicon.svg" alt="App Store"> APP
+                        STORE</button>
+                    <button class="btn-app-store"><img src="../assets/images/Footer/playstore.svg" alt="Play Store">
+                        PLAY STORE</button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+        <p class="footer-copyright  ">All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>

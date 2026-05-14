@@ -160,6 +160,22 @@
     }
   }
 
+  .form-group {
+    @apply flex flex-col items-start gap-3 w-full;
+  }
+
+  .form-label {
+    @apply uppercase font-bold text-[14px] leading-[26px] tracking-[0.9px] text-white;
+  }
+
+  .form-input {
+    @apply bg-dark-blue rounded-full py-[20.5px] px-[25px] w-full text-white placeholder:text-white/40 border-none outline-none focus:ring-2 focus:ring-blue transition-all;
+  }
+
+  .form-submit {
+    @apply bg-blue text-white font-bold uppercase tracking-[1.6px] rounded-full py-[20.5px] px-[60px] cursor-pointer hover:bg-hover-button transition-colors duration-300 mt-4;
+  }
+
   .footer-social-list {
     @apply flex items-center gap-4;
   }
