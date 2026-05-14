@@ -1053,7 +1053,6 @@
     border-bottom-width: 2px;
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-    color: var(--color-blue-600);
     &:hover {
       @media (hover: hover) {
         color: var(--color-white);

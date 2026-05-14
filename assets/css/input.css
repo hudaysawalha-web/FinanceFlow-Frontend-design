@@ -16,7 +16,7 @@
   }
 
   .nav_link_choosen{
-   @apply text-blue-600 font-bold border-b-2 hover:text-white;
+   @apply  font-bold border-b-2 hover:text-white;
   }
 
   .nav_link_unchoosen{
