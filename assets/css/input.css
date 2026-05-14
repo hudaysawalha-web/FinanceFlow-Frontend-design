@@ -12,9 +12,16 @@
 
 @layer components {
   .nav_link {
-    @apply text-[14px] leading-[16px] font-medium hover:underline transition-all tracking-[1.4px];
+    @apply text-[14px] leading-[16px] font-medium ;
   }
 
+  .nav_link_choosen{
+   @apply text-blue-600 font-bold border-b-2 hover:text-white;
+  }
+
+  .nav_link_unchoosen{
+    @apply hover:underline transition-all tracking-[1.4px]
+  }
   .nav_link-list {
     @apply text-[32px] leading-none font-bold hover:underline transition-all tracking-[1.4px] py-[40px];
   }
