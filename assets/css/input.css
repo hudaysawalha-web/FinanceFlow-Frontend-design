@@ -12,16 +12,17 @@
 
 @layer components {
   .nav_link {
-    @apply text-[14px] leading-[16px] font-medium ;
+    @apply text-[14px] leading-[16px] font-medium;
   }
 
-  .nav_link_choosen{
-   @apply  font-bold border-b-2 hover:text-white;
+  .nav_link_choosen {
+    @apply font-bold border-b-2 hover:text-white;
   }
 
-  .nav_link_unchoosen{
+  .nav_link_unchoosen {
     @apply hover:underline transition-all tracking-[1.4px]
   }
+
   .nav_link-list {
     @apply text-[32px] leading-none font-bold hover:underline transition-all tracking-[1.4px] py-[40px];
   }
@@ -47,10 +48,10 @@
     @apply w-full overflow-x-hidden py-6 px-6;
   }
 
-  .filter{
-    @apply rounded-[40px] px-6 py-[11px] text-base/6.5 font-normal  w-full flex items-center justify-center gap-2;
+  .filter {
+    @apply rounded-[40px] px-6 py-[11px] text-base/6.5 font-normal w-full flex items-center justify-center gap-2;
   }
- 
+
 
 
   /* MOBILE STYLES (applies up to 1023px) */
@@ -155,7 +156,7 @@
   .blog-par {
     @apply flex flex-col gap-[40px] px-[205px];
 
-    .blog-par-header{
+    .blog-par-header {
       @apply text-[28px] font-bold leading-[30px] tracking-[0.28px] pr-[28px];
     }
   }
@@ -174,6 +175,18 @@
 
   .form-submit {
     @apply bg-blue text-white font-bold uppercase tracking-[1.6px] rounded-full py-[20.5px] px-[60px] cursor-pointer hover:bg-hover-button transition-colors duration-300 mt-4;
+  }
+
+  .qustion {
+    @apply flex justify-between py-6 border-b border-b-white/20;
+
+    h3 {
+      font-size: 28px;
+      line-height: 30px;
+      font-weight: bold;
+      letter-spacing: 0.28px;
+
+    }
   }
 
   .footer-social-list {
@@ -272,6 +285,8 @@
     .news-list {
       @apply flex flex-3 gap-[26px] items-center justify-between my-[48px];
     }
+
+
 
     .footer-main {
       @apply px-33.25 pt-14 pb-8 mt-30;
