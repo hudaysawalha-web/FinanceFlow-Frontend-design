@@ -76,7 +76,7 @@
   }
 
   .features-cards {
-    @apply flex flex-col items-start gap-8 pb-[48px] px-41.5 mb-12;
+    @apply flex flex-col items-start gap-8 pb-[48px] px-4 mb-12;
   }
 
   .card-protofolio {
