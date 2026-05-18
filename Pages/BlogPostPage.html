@@ -21,58 +21,60 @@
 
 <body>
     <header class="header-main">
-        <!--Navigation-->
-        <div class=" container nav_container ">
-            <nav class="flex items-center gap-8 max-sm:flex-1">
+        <!-- Hidden checkbox -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
 
-                <a class="logo block max-md:hidden" href="./Homepage.html"><img
-                        src="../assets/images/logo Finaince flow.svg" alt="logo of Finance Flow"></a>
-
-                <a class="logo hidden max-md:block" href="./Homepage.html "><img
-                        src="../assets/images/logo Finance flow for phone.svg" alt="logo of Finance Flow"></a>
-
+        <div class="nav_container">
+            <nav class="flex items-center gap-8">
+                <a class="logo block max-md:hidden" href="./Homepage.html">
+                    <img src="../assets/images/logo Finaince flow.svg" alt="logo of Finance Flow">
+                </a>
+                <a class="logo hidden max-md:block" href="./Homepage.html">
+                    <img src="../assets/images/logo Finance flow for phone.svg" alt="logo of Finance Flow">
+                </a>
                 <div class="w-px h-16 bg-dark-blue block max-md:hidden"></div>
 
-
+                <!-- Desktop nav links -->
                 <div class="list block max-md:hidden">
-                    <ul class="flex  gap-7 ">
-                  <li class="nav_link "><a href="./Homepage.html" class="nav_link_unchoosen">HOME</a></li>
-                        <li class="nav_link"><a href="#" class="nav_link_unchoosen">ABOUT</a></li>
-                        <li class="nav_link"><a href="./PricingPage.html" class="nav_link_unchoosen">PRICING</a></li>
-                        <li class="nav_link"><a href="#" class="nav_link_unchoosen">TOKENS</a></li>
-                        <li class="nav_link"><a href="./BlogPage.html" class="text-blue-600 font-bold border-b-2 hover:text-white">BLOG</a></li>
-                        <li class="nav_link"><a href="./ContactUsPage.html" class="nav_link_unchoosen"> CONTACT US</a> </li>
+                    <ul class="flex gap-7">
+                        <li><a class="nav-link nav-link-inactive" href="./Homepage.html">HOME</a></li>
+                        <li><a class="nav-link nav-link-inactive" href="#">ABOUT</a></li>
+                        <li><a class="nav-link nav-link-inactive" href="./PricingPage.html">PRICING</a></li>
+                        <li><a class="nav-link nav-link-inactive" href="#">TOKENS</a></li>
+                        <li><a class="nav-link nav-link-active" href="./BlogPage.html">BLOG</a></li>
+                        <li><a class="nav-link nav-link-inactive" href="./ContactUsPage.html">CONTACT US</a></li>
                     </ul>
                 </div>
-
             </nav>
-            <button id="menu-toggle" class="logo hidden max-md:block bg-blue px-2.5 pt-3.25 pb-3 rounded-full "><img
-                    src="../assets/images/menu.svg" alt="menu"></button>
 
-
-            <button class="btn-download block max-md:hidden">
+            <!-- Download button (desktop only) -->
+            <button class="btn-download hidden md:block">
                 DOWNLOAD APP
             </button>
+
+            <!-- Mobile menu icons -->
+            <label for="menu-toggle"
+                class="menu-open cursor-pointer hidden max-md:flex bg-blue px-2.5 pt-3.25 pb-3 rounded-full items-center justify-center">
+                <img src="../assets/images/menu.svg" alt="menu">
+            </label>
+            <label for="menu-toggle"
+                class="menu-close cursor-pointer hidden bg-blue px-2.5 pt-3.25 pb-3 rounded-full items-center justify-center">
+                <img src="../assets/images/x menu.svg" alt="close menu">
+            </label>
         </div>
-        <section class="hidden">
-            <button id="close-menu" class="logo hidden  bg-blue px-2.5 pt-3.25 pb-3 rounded-full "><img
-                    src="../assets/images/x menu.svg" alt="close menu"></button>
 
-            <div class="list-phone-menu  w-154 flex flex-col  items-center">
-                <ul>
-                    <li class="nav_link-list"><a href="./Homepage.html">HOME</a></li>
-                    <li class="nav_link-list"><a href="#">ABOUT</a></li>
-                    <li class="nav_link-list"><a href="./PricingPage.html">PRICING</a></li>
-                    <li class="nav_link-list"><a href="#">TOKENS</a></li>
-                    <li class="nav_link-list"><a href="./BlogPage.html">BLOG</a></li>
-                    <li class="nav_link-list"><a href="#"> CONTACT US</a> </li>
-                    <li><button class="btn_download ">
-                            DOWNLOAD APP
-                        </button></li>
-                </ul>
-
-            </div>
-        </section>
+        <!-- Mobile dropdown menu -->
+        <div class="hidden peer-checked:max-md:block w-full px-11.25 mt-6">
+            <ul class="flex flex-col items-center gap-10">
+                <li><a class="nav-linklist " href="./Homepage.html">HOME</a></li>
+                <li><a class="nav-linklist " href="#">ABOUT</a></li>
+                <li><a class="nav-linklist " href="./PricingPage.html">PRICING</a></li>
+                <li><a class="nav-linklist " href="#">TOKENS</a></li>
+                <li><a class="nav-linklist nav-link-active" href="./BlogPage.html">BLOG</a></li>
+                <li><a class="nav-linklist " href="./ContactUsPage.html">CONTACT US</a></li>
+                <li class="w-full"><button class="btn-download">DOWNLOAD APP</button></li>
+            </ul>
+        </div>
     </header>
     <main class="m-0 p-0 overflow-x-hidden ">
         <section class="max-md:px-4 ">
