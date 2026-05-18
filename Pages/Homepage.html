@@ -10,13 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
-
     <title>FinanceFlow</title>
-    <style>
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
@@ -76,39 +70,35 @@
             </ul>
         </div>
     </header>
+
     <main class="m-0 p-0 overflow-x-hidden">
-        <!--Hero section-->
-        <section id="hero">
+        <!-- Hero section -->
+        <section class="hero mt-21.5 mb-[173px]  max-md:mb-[65px] max-md:mt-[48px] max-md:px-4">
             <div
-                class=" flex items-center pl-33.25 pr-0 mb-42.5 mt-21.5 max-md:flex-col max-md:items-center max-md:pl-0 max-md:mb-20">
-                <div class="flex-1 ">
-                    <h1>Buy, trade, and hold <br> 350+ cryptocurrencies</h1>
-                    <p class="custom-p py-2.25">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat <br>
-                        nulla
-                        suspendisse tortor aenean dis
-                        placerat.</p>
+                class="flex  items-center gap-10 pl-39.25 pr-0 mb-42.5  max-md:flex-col max-md:items-center max-md:pl-0 max-md:mb-20 ">
+                <div class="flex flex-col">
+                    <h1 class="max-md:pr-4.25">Buy, trade, and hold 350+ cryptocurrencies</h1>
+                    <p class="py-2.25 max-md:py-4 max-md:pr-9.5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Feugiat
+                        nulla suspendisse tortor aenean dis placerat.</p>
                     <div class="hero-buttons">
-                        <button class="btn-download ">DOWNLOAD APP</button>
-                        <!--should change the href attribute after I add the page-->
-                        <a class="btn-secondary" href="#">VIEW PRICING</a>
+                        <button class="btn-download">DOWNLOAD APP</button>
+                        <a class="btn-secondary" href="./PricingPage.html">VIEW PRICING</a>
                     </div>
                 </div>
-                <div class=" flex items-end shrink-0 ">
+                <div class="flex items-end shrink-0">
                     <img alt="laptopimage"
-                        src="../assets/images/home page imag and icons/hero section/Apple Computers.webp "
+                        src="../assets/images/home page imag and icons/hero section/Apple Computers.webp"
                         class="block w-auto h-auto max-h-full object-contain max-md:hidden" />
-
                     <img alt="laptopimage"
                         src="../assets/images/home page imag and icons/hero section/full Apple Computers.webp"
                         class="w-auto h-auto max-h-full object-contain hidden max-md:block" />
-
                 </div>
             </div>
-            <div class="flex flex-col items-center gap-4 mb-42.5">
-                <h5 class="text-[18px] leading-8 hidden md:block ">Finance flow has been featured on</h5>
-                <h5 class="text-[18px] leading-8 block md:hidden ">Crypto App has been featured on</h5>
-                <div
-                    class="grid grid-flow-col grid-cols-5 gap-17.5 max-md:grid-flow-row max-md:grid-cols-2 max-md:gap-10">
+            <div class="flex flex-col items-center space-y-8.5">
+                <p class="text-[18px] leading-8 hidden md:block">Finance flow has been featured on</p>
+                <p class="text-[18px] leading-8 block md:hidden">Crypto App has been featured on</p>
+                <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8 ">
                     <img alt="Company 1" src="../assets/images/home page imag and icons/hero section/company1.webp">
                     <img alt="Company 2" src="../assets/images/home page imag and icons/hero section/company2.webp">
                     <img alt="Company 3" src="../assets/images/home page imag and icons/hero section/company 3.webp">
@@ -117,7 +107,8 @@
                 </div>
             </div>
         </section>
-        <section class="features max-md:px-4">
+
+                <section class="features max-md:px-4">
             <div class=" flex flex-col items-center max-md:items-start ">
                 <h2>Build your crypto portfolio</h2>
                 <p class="mb-[80px] lg:text-center ">Lorem ipsum dolor sit amet, consectetur
@@ -184,8 +175,7 @@
                 <button class="btn-download items-center">Download App</button>
             </div>
         </section>
-
-        <section id="rewards-section">
+ <section id="rewards-section">
 
             <div class="flex items-center max-lg:flex-col ">
                 <img src="../assets/images/home page imag and icons/Group 2.webp" alt="two phones image"
