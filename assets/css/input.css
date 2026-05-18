@@ -197,11 +197,12 @@
 
   /* ---------- Footer ---------- */
   .footer-main {
-    @apply bg-dark-blue w-full overflow-x-hidden px-5 pt-10 pb-6 mt-20;
+    @apply bg-dark-blue w-full px-5 pt-10 pb-6 mt-20;
   }
 
-  .nav_footer_container {
+  .nav-footer {
     @apply flex flex-col items-center gap-6;
+
   }
 
   .footer-social-list {
@@ -225,7 +226,7 @@
   }
 
   .footer-menu-list {
-    @apply grid grid-flow-col grid-rows-3 justify-between gap-3 pt-6;
+    @apply grid grid-flow-col grid-rows-3 gap-3 pt-6;
   }
 
   .footer-card {
@@ -295,7 +296,7 @@
     }
 
     .card-download {
-      @apply  px-[48px] pt-[48px] ;
+      @apply px-[48px] pt-[48px];
     }
 
 
@@ -303,8 +304,8 @@
       @apply px-33.25 pt-14 pb-8 mt-30;
     }
 
-    .nav_footer_container {
-      @apply flex-row items-center justify-between;
+    .nav-footer {
+      @apply flex items-center justify-between;
     }
 
     .footer-content-row {
