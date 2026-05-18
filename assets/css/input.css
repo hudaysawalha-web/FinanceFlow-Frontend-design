@@ -69,7 +69,7 @@
   }
 
   .review-card {
-    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left gap-[25px] opacity-45 backdrop-blur-xs scale-95;
+    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left gap-[25px] opacity-45 scale-95;
   }
 
   .review-card-active {
