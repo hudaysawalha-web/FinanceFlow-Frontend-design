@@ -184,14 +184,23 @@
   .relative {
     position: relative;
   }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
   .col-start-1 {
     grid-column-start: 1;
   }
-  .col-start-3 {
-    grid-column-start: 3;
+  .col-start-2 {
+    grid-column-start: 2;
+  }
+  .col-start-4 {
+    grid-column-start: 4;
   }
   .row-start-1 {
     grid-row-start: 1;
+  }
+  .row-start-2 {
+    grid-row-start: 2;
   }
   .container {
     width: 100%;
@@ -216,6 +225,12 @@
   }
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
+  }
+  .mx-6 {
+    margin-inline: calc(var(--spacing) * 6);
+  }
+  .mx-6\.5 {
+    margin-inline: calc(var(--spacing) * 6.5);
   }
   .mx-\[16px\] {
     margin-inline: 16px;
@@ -259,9 +274,6 @@
   .mt-\[25px\] {
     margin-top: 25px;
   }
-  .mt-\[37px\] {
-    margin-top: 37px;
-  }
   .mt-\[48px\] {
     margin-top: 48px;
   }
@@ -279,6 +291,9 @@
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
   }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
@@ -300,9 +315,6 @@
   }
   .mb-\[47px\] {
     margin-bottom: 47px;
-  }
-  .mb-\[80px\] {
-    margin-bottom: 80px;
   }
   .mb-\[102px\] {
     margin-bottom: 102px;
@@ -417,6 +429,9 @@
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -655,11 +670,20 @@
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
   }
+  .pr-11 {
+    padding-right: calc(var(--spacing) * 11);
+  }
+  .pr-\[55px\] {
+    padding-right: 55px;
+  }
   .pr-\[61px\] {
     padding-right: 61px;
   }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
   }
   .pb-\[34px\] {
     padding-bottom: 34px;
@@ -957,6 +981,11 @@
       padding-right: 44px;
     }
   }
+  .max-md\:pr-\[55px\] {
+    @media (width < 48rem) {
+      padding-right: 55px;
+    }
+  }
   .max-md\:pl-0 {
     @media (width < 48rem) {
       padding-left: calc(var(--spacing) * 0);
@@ -1017,6 +1046,11 @@
   .lg\:mx-0 {
     @media (width >= 64rem) {
       margin-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:mx-6\.5 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 6.5);
     }
   }
   .lg\:mx-\[157px\] {
@@ -1117,6 +1151,11 @@
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
+    }
+  }
+  .lg\:gap-8 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 8);
     }
   }
   .lg\:overflow-visible {
@@ -1457,12 +1496,10 @@
     padding-bottom: calc(var(--spacing) * 8);
   }
   .features-cards {
-    margin-bottom: calc(var(--spacing) * 12);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: calc(var(--spacing) * 8);
-    padding-inline: calc(var(--spacing) * 4);
+    gap: calc(var(--spacing) * 4);
     padding-bottom: 48px;
   }
   .pricing-cards {
@@ -1759,9 +1796,10 @@
     }
     .features-cards {
       display: grid;
-      grid-template-columns: 325fr 477fr 325fr;
-      gap: calc(var(--spacing) * 8);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: calc(var(--spacing) * 0);
       padding-inline: calc(var(--spacing) * 41.5);
+      padding-block: calc(var(--spacing) * 12);
     }
     .card-protofolio {
       display: flex;
@@ -1880,16 +1918,16 @@
     width: calc(var(--spacing) * 5);
   }
   .main-card {
-    grid-column-start: 2;
-    grid-row: span 2 / span 2;
-    grid-row-start: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
     border-radius: 40px;
     background-color: var(--color-blue);
-    padding-inline: calc(var(--spacing) * 15.25);
-    padding-top: calc(var(--spacing) * 8.5);
-    text-align: start;
+    padding-top: 48px;
+    padding-right: 22px;
+    padding-left: 23px;
+    text-align: left;
   }
   .daily-rewards-list {
     display: flex;
@@ -1962,7 +2000,7 @@
     font-weight: 700;
     letter-spacing: 0;
   }
-  .p {
+  p {
     font-size: 16px;
     line-height: 26px;
     font-weight: normal;
@@ -1988,14 +2026,12 @@
     }
     h3 {
       font-size: 18px;
-      line-height: 26px;
-      font-weight: bold;
-      letter-spacing: 0.9px;
-      margin-bottom: 7px;
-    }
-    .p {
-      font-size: 18px;
       line-height: 32px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
       font-weight: normal;
       letter-spacing: 0;
     }

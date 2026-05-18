@@ -110,7 +110,7 @@
 
   /* ---------- Feature & Pricing Sections ---------- */
   .features-cards {
-    @apply flex flex-col items-start gap-8 pb-[48px] px-4 mb-12;
+    @apply flex flex-col items-start gap-4 pb-[48px];
   }
 
   .pricing-cards {
@@ -263,7 +263,7 @@
     }
 
     .features-cards {
-      @apply grid grid-cols-[325fr_477fr_325fr] gap-8 px-41.5;
+      @apply grid grid-cols-4 gap-0 py-12 px-41.5 ;
     }
 
     .card-protofolio {
@@ -348,7 +348,7 @@
   }
 
   .main-card {
-    @apply bg-blue rounded-[40px] flex flex-col text-start pt-8.5 px-15.25 col-start-2 row-start-1 row-span-2;
+    @apply bg-blue rounded-[40px] pl-[23px] pt-[48px] pr-[22px] flex flex-col items-center text-left gap-[20px]  ;
   }
 
   .daily-rewards-list {
@@ -407,7 +407,7 @@
   }
 
 
-  .p {
+  p {
     font-size: 16px;
     line-height: 26px;
     font-weight: normal;
@@ -438,15 +438,14 @@
 
     h3 {
       font-size: 18px;
-      line-height: 26px;
+      line-height: 32px;
       font-weight: bold;
-      letter-spacing: 0.9px;
-      margin-bottom: 7px;
+      
     }
 
-    .p {
-      font-size: 18px;
-      line-height: 32px;
+    p {
+      font-size: 16px;
+      line-height: 26px;
       font-weight: normal;
       letter-spacing: 0;
     }
