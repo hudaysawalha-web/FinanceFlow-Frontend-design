@@ -1185,6 +1185,18 @@
   }
 }
 @layer components {
+  .header-main {
+    position: sticky;
+    top: calc(var(--spacing) * 0);
+    z-index: 50;
+    width: 100%;
+    background-color: var(--color-bg);
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
   .nav-link {
     font-size: 14px;
     --tw-leading: 16px;

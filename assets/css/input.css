@@ -14,6 +14,9 @@
 @layer components {
 
   /* ---------- Navigation ---------- */
+  .header-main{
+    @apply sticky top-0 z-50 bg-bg w-full transition-all duration-300;
+  }
   .nav-link {
     @apply text-[14px] leading-[16px] font-medium;
   }
