@@ -1256,6 +1256,7 @@
     font-weight: var(--font-weight-bold);
     --tw-tracking: 1.6px;
     letter-spacing: 1.6px;
+    text-transform: uppercase;
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -1286,6 +1287,7 @@
     font-weight: var(--font-weight-bold);
     --tw-tracking: 1.6px;
     letter-spacing: 1.6px;
+    text-transform: uppercase;
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -1320,6 +1322,7 @@
     --tw-tracking: 0.9px;
     letter-spacing: 0.9px;
     color: var(--color-white);
+    text-transform: uppercase;
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));

@@ -39,15 +39,15 @@
 
   /* ---------- Buttons ---------- */
   .btn-download {
-    @apply bg-blue rounded-full px-8 py-6.5 text-base/4 font-bold tracking-[1.6px] hover:bg-hover-button transition-colors duration-300 w-full flex items-center justify-center gap-2;
+    @apply bg-blue rounded-full px-8 py-6.5 text-base/4 font-bold tracking-[1.6px] uppercase hover:bg-hover-button transition-colors duration-300 w-full flex items-center justify-center gap-2;
   }
 
   .btn-secondary {
-    @apply bg-white/10 rounded-full px-8 py-6.5 text-base/4 font-bold tracking-[1.6px] hover:bg-blue/50 transition-colors duration-300 w-full flex items-center justify-center gap-2;
+    @apply bg-white/10 rounded-full px-8 py-6.5 text-base/4 font-bold tracking-[1.6px] uppercase hover:bg-blue/50 transition-colors duration-300 w-full flex items-center justify-center gap-2;
   }
 
   .btn-app-store {
-    @apply bg-[#2563EB] text-white text-base font-bold tracking-[0.9px] py-6.75 px-8 rounded-full border-none cursor-pointer transition-all hover:bg-[#1E4BD2] active:scale-[0.98] w-[210px] flex items-center justify-center gap-2;
+    @apply bg-[#2563EB] text-white text-base font-bold tracking-[0.9px] uppercase py-6.75 px-8 rounded-full border-none cursor-pointer transition-all hover:bg-[#1E4BD2] active:scale-[0.98] w-[210px] flex items-center justify-center gap-2;
   }
 
   /* ---------- Header & Hero ---------- */
