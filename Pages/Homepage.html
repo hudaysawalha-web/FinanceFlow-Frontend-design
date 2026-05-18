@@ -252,10 +252,10 @@
         </section>
 
         <section
-            class="bg-blue relative flex flex-row overflow-visible mb-50 max-md:flex-col  max-md:overflow-hidden max-md:mb-30 ">
+            class="bg-blue relative flex flex-row overflow-visible mb-50 max-md:flex-col  max-md:overflow-hidden max-md:mb-30  ">
 
             <!-- Text Content -->
-            <div class=" pt-27.75 px-37.5 text-center lg:w-[50%] lg:text-left lg:py-25">
+            <div class=" pt-27.75 lg:px-37.5 text-center lg:w-[50%] lg:text-left lg:py-25 max-md:mx-4 max-md:pt-10">
                 <h2>Explore endless possibilities with FinanceFlow</h2>
                 <p class="pt-4 pb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Feugiat nulla suspendisse tortor aene.</p>
@@ -272,26 +272,25 @@
             </div>
         </section>
 
-        <section class="reviews-section  mb-[159px] ">
+        <section class="reviews-section  mb-[159px] max-md:mb-30 max-md:mx-[16px] ">
             <div class="flex flex-col gap-[33px] mb-10">
-                <div
-                    class="flex justify-between px-[150px] max-md:flex-col max-md:items-start max-md:gap-[16px] max-md:mx-[16px]">
+                <div class="flex justify-between px-[150px] max-md:flex-col max-md:items-start max-md:gap-[16px] max-md:px-0">
                     <h2>What our users say?</h2>
                     <button class="btn-download">Download App</button>
                 </div>
 
                 <!-- Cards Track -->
                 <div class="overflow-x-auto no-scrollbar snap-x snap-mandatory">
-                    <div class="grid grid-flow-col auto-cols-[586px] gap-[26px] ">
+                    <div class="grid grid-flow-col auto-cols-[586px] gap-[26px] max-md:gap-2 max-md:auto-cols-[343px]">
 
-                        <div class="review-card snap-center ">
+                        <div class="review-card  snap-center ">
                             <div>
                                 <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum
                                     dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at
                                     phasellus
                                     faucibus senectus in”</p>
                             </div>
-                            <div class="flex gap-[22px] mt-[25px]">
+                            <div class="review-card-footer ">
                                 <img src="../assets/images/home page imag and icons/Avatar 1.webp" alt="avatar image">
                                 <div>
                                     <h3>John carter</h3>
@@ -308,7 +307,7 @@
                                     phasellus
                                     faucibus senectus in”</p>
                             </div>
-                            <div class="flex gap-[22px] mt-[25px]">
+                            <div class="review-card-footer">
                                 <img src="../assets/images/home page imag and icons/Avatar 1.webp" alt="avatar image">
                                 <div>
                                     <h3>John carter</h3>
@@ -324,7 +323,7 @@
                                     phasellus
                                     faucibus senectus in”</p>
                             </div>
-                            <div class="flex gap-[22px] mt-[25px]">
+                            <div class="review-card-footer">
                                 <img src="../assets/images/home page imag and icons/Avatar 1.webp" alt="avatar image">
                                 <div>
                                     <h3>John carter</h3>
@@ -340,7 +339,7 @@
                                     phasellus
                                     faucibus senectus in”</p>
                             </div>
-                            <div class="flex gap-[22px] mt-[25px]">
+                            <div class="review-card-footer">
                                 <img src="../assets/images/home page imag and icons/Avatar 1.webp" alt="avatar image">
                                 <div>
                                     <h3>John carter</h3>
@@ -355,42 +354,43 @@
             </div>
             <!-- Dots -->
             <div class="flex justify-center gap-2 mt-3">
-                <span class="w-2 h-2 rounded-full bg-white/25"></span>
-                <span class="w-2 h-2 rounded-full bg-white"></span> <!-- active dot = wider pill -->
-                <span class="w-2 h-2 rounded-full bg-white/25"></span>
-                <span class="w-2 h-2 rounded-full bg-white/25"></span>
-                <span class="w-2 h-2 rounded-full bg-white/25"></span>
+                <span class="dot"></span>
+                <span class="active-dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
         </section>
-        <section class="get-started-section flex items-center max-lg:flex-col ">
 
-            <div class="flex-col items-start ml-[196px] max-lg:ml-[16px] max-lg:mb-[80px] max-lg:mr-[40px]">
-                <div class=" pr-[61px] max-lg:items-start">
-                    <h2>Get started today</h2>
-                    <p class="w-[475px] mb-[40px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
-                        nulla suspendisse tortor
-                        aene.</p>
+        <section class="get-started-section  mb-42.5 px-39.25  max-md:px-4 ">
+            <div class="flex items-start gap-[61px] max-md:flex-col ">
+                <div class="flex-col pt-[34px]  ">
+                    <div class="flex flex-col gap-6 pb-10">
+                        <h2>Get started today</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+                            nulla suspendisse tortor aene.</p>
+                    </div>
+                    <div class="daily-rewards-list">
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/Download.webp" alt="Download icon">
+                            <p> Download app</p>
+                        </div>
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/person.webp" alt="User icon">
+                            <p> Create a free account</p>
+                        </div>
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/Money.webp" alt="Money icon">
+                            <p> Start trading</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="daily-rewards-list">
-                    <div class="daily-rewards-points">
-                        <img src="../assets/images/home page imag and icons/Download.webp" alt="Download icon">
-                        <p> Download app</p>
-                    </div>
-                    <div class="daily-rewards-points">
-                        <img src="../assets/images/home page imag and icons/person.webp" alt="User icon">
-                        <p> Create a free account</p>
-                    </div>
-                    <div class="daily-rewards-points">
-                        <img src="../assets/images/home page imag and icons/Money.webp" alt="Money icon">
-                        <p> Start trading</p>
-                    </div>
+                <div>
+                    <!--this should be tag video <video> <source src="movie.mp4" type="video/mp4"></video> but i don't have video now -->
+                    <img src="../assets/images/home page imag and icons/video.webp" alt="videoget started image"
+                        class="w-full">
                 </div>
             </div>
-            <!--this should be tag video <video> <source src="movie.mp4" type="video/mp4"></video> but i don't have video now -->
-            <img src="../assets/images/home page imag and icons/video.webp" alt="videoget started image"
-                class="mx-[16px] lg:ml-[61px]">
-
-
         </section>
 
         <section class="news-preview ">

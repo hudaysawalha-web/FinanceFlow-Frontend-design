@@ -69,11 +69,14 @@
   }
 
   .review-card {
-    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left gap-[25px] opacity-45 scale-95;
+    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left flex flex-col gap-[25px] opacity-45 scale-95 ;
   }
 
   .review-card-active {
-    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left gap-[25px] opacity-100 scale-100;
+    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left flex flex-col gap-[25px] opacity-100 scale-100;
+  }
+  .review-card-footer{
+    @apply flex gap-[22px] pr-[271.39px] max-md:pr-0;
   }
 
   .card-protofolio {
@@ -335,6 +338,12 @@
     @apply flex items-center;
   }
 
+  .dot{
+    @apply w-2 h-2 rounded-full bg-white/25;
+  }
+  .active-dot{
+    @apply w-2 h-2 rounded-full bg-white;
+  }
   .nav_container {
     @apply flex items-center justify-between;
   }
