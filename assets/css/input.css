@@ -88,11 +88,11 @@
   }
 
   .news-card {
-    @apply bg-dark-blue rounded-[40px] px-[23px] relative;
+    @apply bg-dark-blue rounded-[40px]  ;
   }
 
-  .news-card .cover-card {
-    @apply overflow-hidden rounded-t-[40px] -mx-[23px] -mt-0 w-[calc(100%+46px)] relative z-0;
+  .cover-news-card {
+    @apply w-full  rounded-t-[40px];
   }
 
   .news-card h3 {
