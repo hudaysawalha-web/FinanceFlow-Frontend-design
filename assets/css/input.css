@@ -14,9 +14,10 @@
 @layer components {
 
   /* ---------- Navigation ---------- */
-  .header-main{
+  .header-main {
     @apply sticky top-0 z-50 bg-bg w-full transition-all duration-300;
   }
+
   .nav-link {
     @apply text-[14px] leading-[16px] font-medium;
   }
@@ -64,21 +65,22 @@
     @apply rounded-[40px] px-6 py-[11px] text-base/6.5 font-normal w-full flex items-center justify-center gap-2;
   }
 
- 
+
 
   /* ---------- Cards (General) ---------- */
   .card-download {
-    @apply bg-dark-blue rounded-[40px] pl-[48px] pr-[72px] pt-[48px] flex flex-col gap-[16px] text-left pb-0;
+    @apply bg-dark-blue rounded-[40px] px-[32px] pt-[32px] flex flex-col pb-0;
   }
 
   .review-card {
-    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left flex flex-col gap-[25px] opacity-45 scale-95 ;
+    @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left flex flex-col gap-[25px] opacity-45 scale-95;
   }
 
   .review-card-active {
     @apply bg-dark-blue rounded-[40px] px-[50px] py-[65px] text-left flex flex-col gap-[25px] opacity-100 scale-100;
   }
-  .review-card-footer{
+
+  .review-card-footer {
     @apply flex gap-[22px] pr-[271.39px] max-md:pr-0;
   }
 
@@ -91,11 +93,11 @@
   }
 
   .news-card {
-    @apply bg-dark-blue rounded-[40px]  ;
+    @apply bg-dark-blue rounded-[40px];
   }
 
   .cover-news-card {
-    @apply w-full  rounded-t-[40px];
+    @apply w-full rounded-t-[40px];
   }
 
   .news-card h3 {
@@ -149,7 +151,7 @@
 
   /* ---------- News & Blog ---------- */
   .news-preview {
-    @apply mx-4 my-[80px];
+    @apply px-4 mb-[80px];
   }
 
   .tag {
@@ -269,7 +271,7 @@
     }
 
     .features-cards {
-      @apply grid grid-cols-4 gap-0 py-12 px-41.5 ;
+      @apply grid grid-cols-4 gap-0 py-12 px-41.5;
     }
 
     .card-protofolio {
@@ -281,7 +283,7 @@
     }
 
     .news-preview {
-      @apply mx-[133px] my-[120px];
+      @apply px-[133px] mb-[120px];
     }
 
     .news-list {
@@ -290,6 +292,10 @@
 
     .pricing-cards {
       @apply flex-row gap-6.5;
+    }
+
+    .card-download {
+      @apply  px-[48px] pt-[48px] ;
     }
 
 
@@ -341,12 +347,14 @@
     @apply flex items-center;
   }
 
-  .dot{
+  .dot {
     @apply w-2 h-2 rounded-full bg-white/25;
   }
-  .active-dot{
+
+  .active-dot {
     @apply w-2 h-2 rounded-full bg-white;
   }
+
   .nav_container {
     @apply flex items-center justify-between;
   }
@@ -360,7 +368,7 @@
   }
 
   .main-card {
-    @apply bg-blue rounded-[40px] pl-[23px] pt-[48px] pr-[22px] flex flex-col items-center text-left gap-[20px]  ;
+    @apply bg-blue rounded-[40px] pl-[23px] pt-[48px] pr-[22px] flex flex-col items-center text-left gap-[20px];
   }
 
   .daily-rewards-list {
@@ -452,7 +460,7 @@
       font-size: 18px;
       line-height: 32px;
       font-weight: bold;
-      
+
     }
 
     p {

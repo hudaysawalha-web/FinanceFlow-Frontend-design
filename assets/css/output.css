@@ -237,6 +237,12 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
+  .my-\[16px\] {
+    margin-block: 16px;
+  }
   .my-\[120px\] {
     margin-block: 120px;
   }
@@ -278,9 +284,6 @@
   }
   .mb-50 {
     margin-bottom: calc(var(--spacing) * 50);
-  }
-  .mb-\[16px\] {
-    margin-bottom: 16px;
   }
   .mb-\[40px\] {
     margin-bottom: 40px;
@@ -592,6 +595,9 @@
   .px-\[150px\] {
     padding-inline: 150px;
   }
+  .px-\[157px\] {
+    padding-inline: 157px;
+  }
   .px-\[193\.5px\] {
     padding-inline: 193.5px;
   }
@@ -801,11 +807,6 @@
       margin-top: 48px;
     }
   }
-  .max-md\:mr-\[44px\] {
-    @media (width < 48rem) {
-      margin-right: 44px;
-    }
-  }
   .max-md\:mb-20 {
     @media (width < 48rem) {
       margin-bottom: calc(var(--spacing) * 20);
@@ -814,6 +815,11 @@
   .max-md\:mb-30 {
     @media (width < 48rem) {
       margin-bottom: calc(var(--spacing) * 30);
+    }
+  }
+  .max-md\:mb-\[24px\] {
+    @media (width < 48rem) {
+      margin-bottom: 24px;
     }
   }
   .max-md\:mb-\[40px\] {
@@ -941,9 +947,9 @@
       padding-right: calc(var(--spacing) * 9.5);
     }
   }
-  .max-md\:pr-\[44px\] {
+  .max-md\:pr-\[28px\] {
     @media (width < 48rem) {
-      padding-right: 44px;
+      padding-right: 28px;
     }
   }
   .max-md\:pl-0 {
@@ -956,11 +962,6 @@
       @media (width < 48rem) {
         display: block;
       }
-    }
-  }
-  .md\:mx-\[157px\] {
-    @media (width >= 48rem) {
-      margin-inline: 157px;
     }
   }
   .md\:block {
@@ -1365,14 +1366,11 @@
   .card-download {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     border-radius: 40px;
     background-color: var(--color-dark-blue);
-    padding-top: 48px;
-    padding-right: 72px;
+    padding-inline: 32px;
+    padding-top: 32px;
     padding-bottom: calc(var(--spacing) * 0);
-    padding-left: 48px;
-    text-align: left;
   }
   .review-card {
     display: flex;
@@ -1519,8 +1517,8 @@
     width: 100%;
   }
   .news-preview {
-    margin-inline: calc(var(--spacing) * 4);
-    margin-block: 80px;
+    margin-bottom: 80px;
+    padding-inline: calc(var(--spacing) * 4);
   }
   .tag {
     position: relative;
@@ -1798,8 +1796,8 @@
       width: 279px;
     }
     .news-preview {
-      margin-inline: 133px;
-      margin-block: 120px;
+      margin-bottom: 120px;
+      padding-inline: 133px;
     }
     .news-list {
       margin-block: 48px;
@@ -1812,6 +1810,10 @@
     .pricing-cards {
       flex-direction: row;
       gap: calc(var(--spacing) * 6.5);
+    }
+    .card-download {
+      padding-inline: 48px;
+      padding-top: 48px;
     }
     .footer-main {
       margin-top: calc(var(--spacing) * 30);
