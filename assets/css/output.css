@@ -889,6 +889,11 @@
       margin-inline: calc(var(--spacing) * 1);
     }
   }
+  .max-md\:mx-4 {
+    @media (width < 48rem) {
+      margin-inline: calc(var(--spacing) * 4);
+    }
+  }
   .max-md\:mx-\[16px\] {
     @media (width < 48rem) {
       margin-inline: 16px;
@@ -907,6 +912,11 @@
   .max-md\:mr-\[44px\] {
     @media (width < 48rem) {
       margin-right: 44px;
+    }
+  }
+  .max-md\:mb-0 {
+    @media (width < 48rem) {
+      margin-bottom: calc(var(--spacing) * 0);
     }
   }
   .max-md\:mb-20 {
@@ -949,6 +959,11 @@
       flex-direction: column;
     }
   }
+  .max-md\:flex-col-reverse {
+    @media (width < 48rem) {
+      flex-direction: column-reverse;
+    }
+  }
   .max-md\:items-center {
     @media (width < 48rem) {
       align-items: center;
@@ -962,6 +977,11 @@
   .max-md\:gap-5 {
     @media (width < 48rem) {
       gap: calc(var(--spacing) * 5);
+    }
+  }
+  .max-md\:gap-10 {
+    @media (width < 48rem) {
+      gap: calc(var(--spacing) * 10);
     }
   }
   .max-md\:gap-\[16px\] {
@@ -1111,6 +1131,11 @@
       margin-bottom: calc(var(--spacing) * 20);
     }
   }
+  .lg\:mb-31\.75 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 31.75);
+    }
+  }
   .lg\:mb-\[52px\] {
     @media (width >= 64rem) {
       margin-bottom: 52px;
@@ -1166,6 +1191,11 @@
       width: auto;
     }
   }
+  .lg\:flex-col {
+    @media (width >= 64rem) {
+      flex-direction: column;
+    }
+  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
@@ -1186,6 +1216,11 @@
       gap: calc(var(--spacing) * 8);
     }
   }
+  .lg\:gap-41\.75 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 41.75);
+    }
+  }
   .lg\:overflow-visible {
     @media (width >= 64rem) {
       overflow: visible;
@@ -1194,6 +1229,11 @@
   .lg\:px-2 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 2);
+    }
+  }
+  .lg\:px-43 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 43);
     }
   }
   .lg\:px-80 {
@@ -1234,6 +1274,21 @@
   .lg\:py-\[7px\] {
     @media (width >= 64rem) {
       padding-block: 7px;
+    }
+  }
+  .lg\:pt-22 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 22);
+    }
+  }
+  .lg\:pr-7\.25 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 7.25);
+    }
+  }
+  .lg\:pl-\[166px\] {
+    @media (width >= 64rem) {
+      padding-left: 166px;
     }
   }
   .lg\:text-center {
