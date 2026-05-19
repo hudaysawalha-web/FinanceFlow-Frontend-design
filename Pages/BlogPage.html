@@ -22,16 +22,16 @@
 
         <div class="nav_container">
             <nav class="flex items-center gap-8">
-                <a class="logo block max-md:hidden" href="./Homepage.html">
+                <a class="logo block max-lg:hidden" href="./Homepage.html">
                     <img src="../assets/images/logo Finaince flow.svg" alt="logo of Finance Flow">
                 </a>
-                <a class="logo hidden max-md:block" href="./Homepage.html">
+                <a class="logo hidden max-lg:block" href="./Homepage.html">
                     <img src="../assets/images/logo Finance flow for phone.svg" alt="logo of Finance Flow">
                 </a>
-                <div class="w-px h-16 bg-dark-blue block max-md:hidden"></div>
+                <div class="w-px h-16 bg-dark-blue block max-lg:hidden"></div>
 
                 <!-- Desktop nav links -->
-                <div class="list block max-md:hidden">
+                <div class="list block max-lg:hidden">
                     <ul class="flex gap-7">
                         <li><a class="nav-link nav-link-inactive" href="./Homepage.html">HOME</a></li>
                         <li><a class="nav-link nav-link-inactive" href="#">ABOUT</a></li>
@@ -44,13 +44,13 @@
             </nav>
 
             <!-- Download button (desktop only) -->
-            <button class="btn-download hidden md:block">
+            <button class="btn-download block max-lg:hidden">
                 DOWNLOAD APP
             </button>
 
             <!-- Mobile menu icons -->
             <label for="menu-toggle"
-                class="menu-open cursor-pointer hidden max-md:flex bg-blue px-2.5 pt-3.25 pb-3 rounded-full items-center justify-center">
+                class="menu-open cursor-pointer hidden max-lg:flex bg-blue px-2.5 pt-3.25 pb-3 rounded-full items-center justify-center">
                 <img src="../assets/images/menu.svg" alt="menu">
             </label>
             <label for="menu-toggle"
@@ -60,7 +60,7 @@
         </div>
 
         <!-- Mobile dropdown menu -->
-        <div class="hidden peer-checked:max-md:block w-full px-11.25 mt-6">
+        <div class="hidden peer-checked:max-lg:block w-full px-11.25 mt-6">
             <ul class="flex flex-col items-center gap-10">
                 <li><a class="nav-linklist " href="./Homepage.html">HOME</a></li>
                 <li><a class="nav-linklist " href="#">ABOUT</a></li>
@@ -73,16 +73,16 @@
         </div>
     </header>
     <main class="m-0 p-0 overflow-x-hidden ">
-        <section class=" lg:mx-[157px] mx-[16px]">
+        <section class="px-[157px] mx-[16px] mb-[92px]">
             <div
-                class="flex justify-between lg:items-center  text-start px-[15px] mb-[47px] lg:py-[7px] lg:px-[3px] lg:text-center gap-4 lg:my-[48px] max-md:flex-col ">
+                class="flex justify-between lg:items-center  text-start px-[15px] mb-[47px] lg:py-[7px] lg:px-[3px] lg:text-center gap-4 lg:my-[48px] max-lg:flex-col ">
                 <h1 class=" text-[66px] font-bold leading-[80px] tracking-[1px]">Blog</h1>
                 <p class="pricing-text text-[18px] leading-[32px] font-normal ">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean dis placerat.</p>
             </div>
 
             <a href="./BlogPostPage.html" class="block group">
-                <div class="news-card max-w-full   flex items-center justify-between max-md:hidden ">
+                <div class="news-card max-w-full   flex items-center justify-between max-lg:hidden ">
                     <div class="w-[50%] pt-[58px] pl-[47px] pb-[58px] pr-[78px] gap-5">
                         <div class="tag">Featured</div>
                         <h3>Cryptocurrency Explained With Pros and Cons for Investment</h3>
@@ -93,10 +93,10 @@
 
                     <div class="w-[50%] flex-none overflow-hidden rounded-r-[40px]  rounded-l-none  ">
                         <img src="../assets/images/home page imag and icons/News 1.webp" alt="news image"
-                        class="w-full h-full object-cover object-center block">
+                            class="w-full h-full object-cover object-center block">
                     </div>
 
-                  
+
                 </div>
 
 
@@ -129,39 +129,39 @@
             </a>
         </section>
 
-        <section
-            class="bg-blue flex  items-center md:px-[155px] md:py-[84px] my-[120px]  max-md:flex-col max-md:py-20 max-md:gap-5 ">
-            <img src="../assets/images/massageicong.webp" alt="massage logo" class="w-[68px] h-[68px]">
-            <h2 class="pl-[25px] mb-0">Subscribe to our crypto news weekly newsletter!</h2>
-            <div class="max-md:flex max-md:flex-col max-md:gap-[20px] max-md:w-full  ">
-                <div
-                    class=" bg-white rounded-full py-[8px] pl-4 pr-2 lg:ml-[53px] h-20 flex items-center lg:justify-between lg:w-[480px]  ">
-                    <input type="text" placeholder="Enter email address" name="search" class="text-black">
-                    <button type="submit" class=" btn-download  lg:block max-md:hidden ">Subscribe</button>
-
+        <section class="bg-blue   ">
+            <div class="flex items-center px-[157px] py-[84px] mb-[148px] gap-[53px]  max-lg:flex-col max-lg:py-20 max-lg:gap-5 max-lg:px-5">
+                <div class="flex items-center max-lg:text-center w-full gap-6 max-lg:flex-col gap-[32px]">
+                    <img src="../assets/images/massageicong.webp" alt="massage logo">
+                    <h2>Subscribe to our crypto news weekly newsletter!</h2>
                 </div>
-                <button type="submit"
-                    class="btn-secondary  max-md:mx-1 lg:hidden max-md:block ">Subscribe</button>
+                <div class="w-full flex py-4 max-lg:flex-col max-lg:gap-[20px] justify-end ">
+                    <div class=" bg-white rounded-full py-[8px] pl-4 pr-2 flex items-center justify-between gap-[164px] ">
+                        <input type="text" placeholder="Enter email address" name="search" class="w-full text-black outline-none bg-transparent peer caret-black py-2">
+                        <button type="submit" class=" btn-download  lg:block max-lg:hidden ">Subscribe</button>
+
+                    </div>
+                    <button type="submit" class="btn-secondary  max-lg:mx-1 lg:hidden max-lg:block ">Subscribe</button>
+                </div>
+
             </div>
-
-
 
         </section>
 
-        <section class="max-md:px-4">
+        <section class="max-lg:px-4">
             <div
-                class=" flex items-center justify-between max-md:flex-col  md:px-[155px] max-md:gap-[16px] max-md:mb-[40px] ">
+                class=" flex items-center justify-between px-[155px] max-lg:px-[20px] max-lg:flex-col ">
                 <h2>Latest Posts</h2>
 
-                <div id="filterControls" class="flex gap-[10px] ">
-                    <button  class="filter bg-blue ">All</button>
-                    <button  class=" filter bg-white/10 ">Apps</button>
-                    <button  class="filter bg-white/10">Products</button>
-                    <button  class="filter bg-white/10">Tutorial</button>
+                <div  class="flex gap-[10px] max-lg:flex max-lg:flex-col max-lg:py-6  max-lg:gap-[16px] max-lg:w-full ">
+                    <button class="filter bg-blue ">All</button>
+                    <button class=" filter bg-white/10 ">Apps</button>
+                    <button class="filter bg-white/10">Products</button>
+                    <button class="filter bg-white/10">Tutorial</button>
                 </div>
             </div>
             <a href="./BlogPostPage.html" class="block group">
-                <div class="news-list grid grid-cols-1 gap-[16px] md:grid-cols-3 max-md:my-[48px] md:px-[155px]">
+                <div class="news-list max-lg:grid max-lg:grid-cols-1  max-lg:gap-4 max-lg:px-4  ">
 
                     <div class="news-card ">
 
@@ -323,20 +323,20 @@
             </ul>
         </div>
 
-        <div class="footer-content-row max-md:gap-[56px] ">
+        <div class="footer-content-row max-lg:gap-[56px] ">
             <!-- MENU -->
             <div class="footer-menu-wrapper">
-              
-                    <p class="footer-menu-title font-bold">MENU</p>
-                    <ul class="footer-menu-list">
-                        <li><a href="./Homepage.html" >HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="./PricingPage.html">PRICING</a></li>
-                        <li><a href="#">TOKENS</a></li>
-                        <li><a href="./BlogPage.html">BLOG</a></li>
-                        <li><a href="./ContactUsPage.html">CONTACT US</a></li>
-                    </ul>
-                
+
+                <p class="footer-menu-title font-bold">MENU</p>
+                <ul class="footer-menu-list">
+                    <li><a href="./Homepage.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="./PricingPage.html">PRICING</a></li>
+                    <li><a href="#">TOKENS</a></li>
+                    <li><a href="./BlogPage.html">BLOG</a></li>
+                    <li><a href="./ContactUsPage.html">CONTACT US</a></li>
+                </ul>
+
             </div>
 
             <!-- CARD -->
@@ -345,9 +345,11 @@
                 <p class="footer-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris sed nulla
                     integer</p>
                 <div class="footer-buttons ">
-                    <button class="btn-app-store max-md:w-full"><img src="../assets/images/Footer/appleicon.svg" alt="App Store"> APP
+                    <button class="btn-app-store max-lg:w-full"><img src="../assets/images/Footer/appleicon.svg"
+                            alt="App Store"> APP
                         STORE</button>
-                    <button class="btn-app-store max-md:w-full"><img src="../assets/images/Footer/playstore.svg" alt="Play Store">
+                    <button class="btn-app-store max-lg:w-full"><img src="../assets/images/Footer/playstore.svg"
+                            alt="Play Store">
                         PLAY STORE</button>
                 </div>
             </div>

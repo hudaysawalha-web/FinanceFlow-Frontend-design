@@ -281,7 +281,7 @@
     }
 
     .news-list {
-      @apply flex flex-3 gap-[26px] items-center justify-between my-[48px];
+      @apply grid grid-cols-3 gap-[26px] px-[155px] items-center justify-between my-[48px];
     }
 
     .pricing-cards {
