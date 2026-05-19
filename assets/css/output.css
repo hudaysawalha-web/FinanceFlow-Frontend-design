@@ -1197,6 +1197,8 @@
     z-index: 50;
     width: 100%;
     background-color: var(--color-bg);
+    padding-inline: calc(var(--spacing) * 6);
+    padding-block: calc(var(--spacing) * 6);
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -1340,12 +1342,6 @@
     &:active {
       scale: 0.98;
     }
-  }
-  .header-main {
-    width: 100%;
-    overflow-x: hidden;
-    padding-inline: calc(var(--spacing) * 6);
-    padding-block: calc(var(--spacing) * 6);
   }
   .hero-buttons {
     display: flex;
