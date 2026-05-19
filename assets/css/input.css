@@ -197,11 +197,11 @@
 
   /* ---------- Footer ---------- */
   .footer-main {
-    @apply bg-dark-blue w-full px-5 pt-10 pb-6 mt-20;
+    @apply bg-dark-blue w-full px-6 pt-10 pb-6 mt-20;
   }
 
   .nav-footer {
-    @apply flex flex-col items-center gap-6;
+    @apply flex flex-col items-center gap-6 mb-11;
 
   }
 
@@ -210,23 +210,18 @@
   }
 
   .footer-content-row {
-    @apply flex flex-col gap-6 px-4 pb-10 pt-6;
+    @apply flex flex-col  pb-10 ;
   }
 
-  .footer-menu-wrapper {
-    @apply w-full;
-  }
+ 
 
-  .footer-menu-inner {
-    @apply w-full;
-  }
 
   .footer-menu-title {
     @apply text-lg font-bold tracking-[0.9px] border-b border-white pb-6;
   }
 
   .footer-menu-list {
-    @apply grid grid-flow-col grid-rows-3 gap-3 pt-6;
+    @apply grid grid-flow-col grid-rows-3 gap-3 pt-6 ;
   }
 
   .footer-card {
@@ -305,20 +300,18 @@
     }
 
     .nav-footer {
-      @apply flex items-center justify-between;
+      @apply flex flex-row items-center justify-between mb-23;
     }
 
     .footer-content-row {
-      @apply flex-row gap-45 px-6 pb-32 pt-23;
+      @apply flex-row  pb-32;
     }
 
     .footer-menu-wrapper {
-      @apply w-127.25 items-start justify-between;
+      @apply w-[50%] items-start justify-between pr-[215px];
     }
 
-    .footer-menu-inner {
-      @apply max-w-[280px];
-    }
+    
 
     .footer-menu-title {
       @apply pb-9;
@@ -329,7 +322,7 @@
     }
 
     .footer-card {
-      @apply py-11 pl-13.75 pr-13.75;
+      @apply w-[50%] py-11 pl-13.75 pr-13.75;
     }
 
     .footer-buttons {
