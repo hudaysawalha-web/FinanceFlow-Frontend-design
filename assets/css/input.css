@@ -176,7 +176,7 @@
   }
 
   .form-input {
-    @apply bg-dark-blue rounded-full py-[20.5px] px-[25px] w-full text-white placeholder:text-white/40 border-none outline-none focus:ring-2 focus:ring-blue transition-all;
+    @apply bg-dark-blue rounded-full py-[20.5px] px-[25px] w-full text-white placeholder:text-white/40 border-none outline-none ring-2 ring-transparent transition-all duration-200 hover:ring-white focus:outline-none focus:ring-blue ;
   }
 
   .form-submit {
