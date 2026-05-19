@@ -265,7 +265,7 @@
     }
 
     .features-cards {
-      @apply grid grid-cols-4 gap-5 py-12 px-41.5;
+      @apply grid grid-cols-4 gap-5 py-12 px-35;
     }
 
     .card-protofolio {

@@ -1189,11 +1189,6 @@
       margin-inline: calc(var(--spacing) * 0);
     }
   }
-  .lg\:mx-3\.5 {
-    @media (width >= 64rem) {
-      margin-inline: calc(var(--spacing) * 3.5);
-    }
-  }
   .lg\:mx-6\.5 {
     @media (width >= 64rem) {
       margin-inline: calc(var(--spacing) * 6.5);
@@ -1224,11 +1219,6 @@
       margin-top: 80px;
     }
   }
-  .lg\:mr-3\.5 {
-    @media (width >= 64rem) {
-      margin-right: calc(var(--spacing) * 3.5);
-    }
-  }
   .lg\:mb-20 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 20);
@@ -1237,11 +1227,6 @@
   .lg\:mb-\[52px\] {
     @media (width >= 64rem) {
       margin-bottom: 52px;
-    }
-  }
-  .lg\:ml-3\.5 {
-    @media (width >= 64rem) {
-      margin-left: calc(var(--spacing) * 3.5);
     }
   }
   .lg\:ml-\[157px\] {
@@ -1959,7 +1944,7 @@
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: calc(var(--spacing) * 5);
-      padding-inline: calc(var(--spacing) * 41.5);
+      padding-inline: calc(var(--spacing) * 35);
       padding-block: calc(var(--spacing) * 12);
     }
     .card-protofolio {
