@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>FinanceFlow</title>
+</head>
+
+<body>
+    <header class="header-main  ">
+        <!-- Hidden checkbox -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+        <div class="nav_container">
+            <nav class="flex items-center gap-8">
+                <a class="logo block max-md:hidden" href="./Homepage.html">
+                    <img src="../assets/images/logo Finaince flow.svg" alt="logo of Finance Flow">
+                </a>
+                <a class="logo hidden max-md:block" href="./Homepage.html">
+                    <img src="../assets/images/logo Finance flow for phone.svg" alt="logo of Finance Flow">
+                </a>
+                <div class="w-px h-16 bg-dark-blue block max-md:hidden"></div>
+
+                <!-- Desktop nav links -->
+                <div class="list block max-md:hidden">
+                    <ul class="flex gap-7">
+                        <li><a class="nav-link nav-link-active" href="./Homepage.html">HOME</a></li>
+                        <li><a class="nav-link nav-link-inactive" href="#">ABOUT</a></li>
+                        <li><a class="nav-link nav-link-inactive" href="./PricingPage.html">PRICING</a></li>
+                        <li><a class="nav-link nav-link-inactive" href="#">TOKENS</a></li>
+                        <li><a class="nav-link nav-link-inactive" href="./BlogPage.html">BLOG</a></li>
+                        <li><a class="nav-link nav-link-inactive" href="./ContactUsPage.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Download button (desktop only) -->
+            <button class="btn-download hidden md:block">
+                DOWNLOAD APP
+            </button>
+
+            <!-- Mobile menu icons -->
+            <label for="menu-toggle"
+                class="menu-open cursor-pointer hidden max-md:flex bg-blue px-2.5 pt-3.25 pb-3 rounded-full items-center justify-center">
+                <img src="../assets/images/menu.svg" alt="menu">
+            </label>
+            <label for="menu-toggle"
+                class="menu-close cursor-pointer hidden bg-blue px-2.5 pt-3.25 pb-3 rounded-full items-center justify-center">
+                <img src="../assets/images/x menu.svg" alt="close menu">
+            </label>
+        </div>
+
+        <!-- Mobile dropdown menu -->
+        <div class="hidden peer-checked:max-md:block w-full px-11.25 mt-6">
+            <ul class="flex flex-col items-center gap-10">
+                <li><a class="nav-linklist nav-link-active" href="./Homepage.html">HOME</a></li>
+                <li><a class="nav-linklist " href="#">ABOUT</a></li>
+                <li><a class="nav-linklist " href="./PricingPage.html">PRICING</a></li>
+                <li><a class="nav-linklist " href="#">TOKENS</a></li>
+                <li><a class="nav-linklist " href="./BlogPage.html">BLOG</a></li>
+                <li><a class="nav-linklist " href="./ContactUsPage.html">CONTACT US</a></li>
+                <li class="w-full"><button class="btn-download">DOWNLOAD APP</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="m-0 p-0 overflow-x-hidden">
+        <!-- Hero section -->
+        <section class="hero mt-21.5 mb-[173px]  max-md:mb-[65px] max-md:mt-[48px] max-md:px-4">
+            <div
+                class="flex  items-center gap-10 pl-39.25 pr-0 mb-42.5  max-md:flex-col max-md:items-center max-md:pl-0 max-md:mb-20 ">
+                <div class="flex flex-col">
+                    <h1 class="max-md:pr-4.25">Buy, trade, and hold 350+ cryptocurrencies</h1>
+                    <p class="py-2.25 max-md:py-4 max-md:pr-9.5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Feugiat
+                        nulla suspendisse tortor aenean dis placerat.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-download">DOWNLOAD APP</button>
+                        <a class="btn-secondary" href="./PricingPage.html">View pricing</a>
+                    </div>
+                </div>
+                <div class="flex items-end shrink-0">
+                    <img alt="laptopimage"
+                        src="../assets/images/home page imag and icons/hero section/Apple Computers.webp"
+                        class="block w-auto h-auto max-h-full object-contain max-md:hidden" />
+                    <img alt="laptopimage"
+                        src="../assets/images/home page imag and icons/hero section/full Apple Computers.webp"
+                        class="w-auto h-auto max-h-full object-contain hidden max-md:block" />
+                </div>
+            </div>
+            <div class="flex flex-col items-center space-y-8.5">
+                <p class="text-[18px] leading-8 hidden md:block">Finance flow has been featured on</p>
+                <p class="text-[18px] leading-8 block md:hidden">Crypto App has been featured on</p>
+                <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8 ">
+                    <img alt="Company 1" src="../assets/images/home page imag and icons/hero section/company1.webp">
+                    <img alt="Company 2" src="../assets/images/home page imag and icons/hero section/company2.webp">
+                    <img alt="Company 3" src="../assets/images/home page imag and icons/hero section/company 3.webp">
+                    <img alt="Company 4" src="../assets/images/home page imag and icons/hero section/company 4.webp">
+                    <img alt="Company 5" src="../assets/images/home page imag and icons/hero section/company 5.webp">
+                </div>
+            </div>
+        </section>
+
+        <section class="features mb-[114px] max-md:mb-20 max-md:px-4 ">
+            <div class=" flex flex-col gap-4 pb-4 items-center max-md:items-start ">
+                <h2>Build your crypto portfolio</h2>
+                <p class="lg:text-center pr-11 ">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Feugiat nulla suspendisse tortor aene.
+                </p>
+            </div>
+
+
+            <div class="features-cards">
+                <div class="grid grid-rows-2 gap-4 lg:gap-8 col-start-1 ">
+                    <div class="card-protofolio row-start-1 ">
+                        <img src="../assets/images/home page imag and icons/div.webp" alt="send and receive logo">
+                        <div>
+                            <h3>Send & Receive</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Feugiat nulla suspendisse tortor
+                                aene.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card-protofolio row-start-2 ">
+                        <img src="../assets/images/home page imag and icons/wallet.webp" alt="secure wallet logo">
+                        <div>
+                            <h3>100% Secure Wallet</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor
+                                aene.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-card col-start-2 col-span-2 lg:mx-6.5">
+                    <div>
+                        <h3 class="text-[20px] traking-[1px] ">iOS & Android App</h3>
+                        <p class="pt-[22px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In amet, morbi non
+                            at sed neque.</p>
+                    </div>
+                    <img src="../assets/images/home page imag and icons/iPhones.webp" alt="iphone image"
+                        class="overflow-y-hidden">
+                </div>
+
+
+                <div class="grid grid-rows-2 gap-4 lg:gap-8 col-start-4 ">
+                    <div class="card-protofolio">
+                        <img src="../assets/images/home page imag and icons/charts logo.webp" alt="charts logo">
+                        <div class="container">
+                            <h3>Trading Charts</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor
+                                aene.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card-protofolio ">
+                        <img src="../assets/images/home page imag and icons/trading.webp" alt="trading logo">
+                        <div class="container">
+                            <h3>Real Time Trading</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor
+                                aene.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex px-[90px] justify-center ">
+                <button class="btn-download items-center">Download App</button>
+            </div>
+        </section>
+
+        <section class="rewards-section mb-[219px] max-md:mx-4 max-md:mb-20">
+
+            <div
+                class="flex items-start px-43 gap-41.75 mb-31.75 max-md:flex-col max-md:items-center max-md:gap-10 max-md:px-0 max-md:mb-20 ">
+                <div>
+                    <img src="../assets/images/home page imag and icons/Group 2.webp" alt="two phones image">
+                </div>
+                <div class="flex-col lg:pt-22 lg:pr-7.25 ">
+                    <div>
+                        <h2>Earn daily rewards on your idle tokens</h2>
+                        <p class="pb-[34px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla
+                            suspendisse tortor
+                            aene.
+                        </p>
+                    </div>
+
+                    <div class="daily-rewards-list">
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/down arrow.webp" alt="down arrow">
+                            <p>Lowest fees in market</p>
+                        </div>
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/power.webp" alt="power icon">
+                            <p>Fast andsecure transactions</p>
+                        </div>
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/lock.webp" alt="lock icon">
+                            <p> 256-bit secure encryption</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div
+                class="flex flex-row-reverse items-start gap-[55px]  max-md:flex-col-reverse max-md:items-center max-md:gap-10">
+                <div>
+                    <img src="../assets/images/home page imag and icons/hero section/Apple Computers.webp"
+                        alt="computer image" class="block max-lg:hidden max-md:hidden">
+                    <img src="../assets/images/home page imag and icons/hero section/full Apple Computers.webp"
+                        alt="computer image" class="hidden max-lg:block  max-lg:items-center">
+                </div>
+
+                <div class="flex-col lg:pt-22 lg:pl-[166px]">
+                    <div>
+                        <h2>Earn daily rewards on your idle tokens</h2>
+                        <p class="pb-[34px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla
+                            suspendisse tortor
+                            aene.
+                        </p>
+                    </div>
+
+
+                    <div class="daily-rewards-list">
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/shield.webp" alt="shield icon">
+                            <p>100% Private data</p>
+                        </div>
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/rate.webp" alt="rate icon">
+                            <p> 99.99% Uptime guarantee</p>
+                        </div>
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/chat.webp" alt="chat icon">
+                            <p>24/7 Dedicated support</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section
+            class="bg-blue relative flex flex-row overflow-visible mb-50 max-md:flex-col  max-md:overflow-hidden max-md:mb-30  ">
+
+            <!-- Text Content -->
+            <div class=" pt-27.75 lg:px-37.5 text-center lg:w-[50%] lg:text-left lg:py-25 max-md:mx-4 max-md:pt-10">
+                <h2>Explore endless possibilities with FinanceFlow</h2>
+                <p class="pt-4 pb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Feugiat nulla suspendisse tortor aene.</p>
+                <button
+                    class="btn-download bg-white text-blue hover:bg-dark-blue hover:text-white transition-all duration-150  w-auto max-md:w-full ">Download
+                    App</button>
+            </div>
+
+            <!-- Phones -->
+            <div>
+                <img src="../assets/images/home page imag and icons/twophonesforexplore.webp" alt="two phones image"
+                    class="relative w-[85%] mx-auto  object-contain 
+               lg:absolute lg:w-auto lg:right-[6%] lg:-top-[25%] lg:h-[125%] lg:mx-0 lg:mt-0">
+            </div>
+        </section>
+
+        <section class="reviews-section  mb-[159px] max-md:mb-30 max-md:mx-[16px] ">
+            <div class="flex flex-col gap-[33px] mb-10">
+                <div
+                    class="flex justify-between px-[150px] max-md:flex-col max-md:items-start max-md:gap-[16px] max-md:px-0">
+                    <h2>What our users say?</h2>
+                    <button class="btn-download">Download App</button>
+                </div>
+
+                <!-- Cards Track -->
+                <div class="overflow-x-auto no-scrollbar snap-x snap-mandatory">
+                    <div class="grid grid-flow-col auto-cols-[586px] gap-[26px] max-md:gap-2 max-md:auto-cols-[343px]">
+
+                        <div class="review-card  snap-center ">
+                            <div>
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum
+                                    dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at
+                                    phasellus
+                                    faucibus senectus in”</p>
+                            </div>
+                            <div class="review-card-footer ">
+                                <img src="../assets/images/home page imag and icons/Avatar 1.webp" alt="avatar image">
+                                <div>
+                                    <h3>John carter</h3>
+                                    <h4>Role, Company</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="review-card-active snap-center">
+                            <div>
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum
+                                    dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at
+                                    phasellus
+                                    faucibus senectus in”</p>
+                            </div>
+                            <div class="review-card-footer">
+                                <img src="../assets/images/home page imag and icons/Avatar 1.webp" alt="avatar image">
+                                <div>
+                                    <h3>John carter</h3>
+                                    <h4>Role, Company</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card snap-center">
+                            <div>
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum
+                                    dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at
+                                    phasellus
+                                    faucibus senectus in”</p>
+                            </div>
+                            <div class="review-card-footer">
+                                <img src="../assets/images/home page imag and icons/Avatar 1.webp" alt="avatar image">
+                                <div>
+                                    <h3>John carter</h3>
+                                    <h4>Role, Company</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card snap-center">
+                            <div>
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum
+                                    dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at
+                                    phasellus
+                                    faucibus senectus in”</p>
+                            </div>
+                            <div class="review-card-footer">
+                                <img src="../assets/images/home page imag and icons/Avatar 1.webp" alt="avatar image">
+                                <div>
+                                    <h3>John carter</h3>
+                                    <h4>Role, Company</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- Dots -->
+            <div class="flex justify-center gap-2 mt-3">
+                <span class="dot"></span>
+                <span class="active-dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section class="get-started-section  mb-42.5 px-39.25  max-md:px-4 max-md:mb-20 ">
+            <div class="flex items-start gap-[61px] max-md:flex-col ">
+                <div class="flex-col pt-[34px]  ">
+                    <div class="flex flex-col gap-6 pb-10">
+                        <h2>Get started today</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+                            nulla suspendisse tortor aene.</p>
+                    </div>
+                    <div class="daily-rewards-list">
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/Download.webp" alt="Download icon">
+                            <p> Download app</p>
+                        </div>
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/person.webp" alt="User icon">
+                            <p> Create a free account</p>
+                        </div>
+                        <div class="daily-rewards-points">
+                            <img src="../assets/images/home page imag and icons/Money.webp" alt="Money icon">
+                            <p> Start trading</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!--this should be tag video <video> <source src="movie.mp4" type="video/mp4"></video> but i don't have video now -->
+                    <img src="../assets/images/home page imag and icons/video.webp" alt="videoget started image"
+                        class="w-full">
+                </div>
+            </div>
+        </section>
+
+        <section class="news-preview ">
+            <div
+                class=" flex items-center justify-between max-md:flex-col max-md:items-start max-md:gap-[16px] max-md:mb-[40px]">
+                <h2>Browse our latest news</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non neque orci amet, amet .</p>
+            </div>
+            <a href="./BlogPostPage.html" class="block group">
+                <div class="news-list grid grid-cols-1 gap-[16px] md:grid-cols-3 max-md:my-[48px]">
+                    <div class="news-card ">
+
+                        <img src="../assets/images/home page imag and icons/News 1.webp" alt="news image"
+                            class="cover-news-card">
+
+                        <div class="px-[23px]">
+                            <div class="tag">Products</div>
+                            <div>
+                                <h3>The Basics about Cryptocurrency</h3>
+                                <p>Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra
+                                    donec
+                                    diammeo.
+                                </p>
+                            </div>
+                            <div class="news-card-footer ">
+                                <img src="../assets/images/home page imag and icons/Avatar 3.webp" alt="avatar image">
+                                <div>
+                                    <h4>Alex Turner</h4>
+                                    <p>August 2, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-card ">
+
+                        <img src="../assets/images/home page imag and icons/News 1.webp" alt="news image"
+                            class="cover-news-card">
+
+                        <div class="px-[23px]">
+                            <div class="tag">Products</div>
+                            <div>
+                                <h3>The Basics about Cryptocurrency</h3>
+                                <p>Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra
+                                    donec
+                                    diammeo.
+                                </p>
+                            </div>
+                            <div class="news-card-footer ">
+                                <img src="../assets/images/home page imag and icons/Avatar 3.webp" alt="avatar image">
+                                <div>
+                                    <h4>Alex Turner</h4>
+                                    <p>August 2, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-card ">
+
+                        <img src="../assets/images/home page imag and icons/News 1.webp" alt="news image"
+                            class="cover-news-card">
+
+                        <div class="px-[23px]">
+                            <div class="tag">Products</div>
+                            <div>
+                                <h3>The Basics about Cryptocurrency</h3>
+                                <p>Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra
+                                    donec
+                                    diammeo.
+                                </p>
+                            </div>
+                            <div class="news-card-footer ">
+                                <img src="../assets/images/home page imag and icons/Avatar 3.webp" alt="avatar image">
+                                <div>
+                                    <h4>Alex Turner</h4>
+                                    <p>August 2, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+            <div class="flex justify-center mb-20">
+                <a href="./BlogPage.html" class="btn-secondary items-center ">View All Articles</a>
+            </div>
+
+        </section>
+
+        <section class="Download-section  px-[157px] max-md:px-4 ">
+            <div
+                class=" flex items-center justify-between mb-[40px] max-md:flex-col max-md:items-start max-md:gap-[16px] max-md:mb-[24px] max-md:pr-[28px] ">
+                <h2>Download our app</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non neque orci amet, amet .</p>
+            </div>
+            <div class="flex gap-[72px]  max-md:flex-col">
+                <div class="card-download">
+
+                    <h2>Download for iOS</h2>
+                    <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla integer in
+                        pellentesque
+                        tortor semper elementum. Felis.</p>
+
+                    <button class="btn-app-store my-[16px]"><img src="../assets/images/Footer/appleicon.svg"
+                            alt="App Store"> APP
+                        STORE</button>
+                    <img src="../assets/images/home page imag and icons/iPhonesdown.webp" alt="iPhone download"
+                        class="mt-6">
+                </div>
+                <div class="card-download">
+                    <h2>Download for Android</h2>
+                    <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla integer in
+                        pellentesque
+                        tortor semper elementum. Felis.</p>
+                    <button class="btn-app-store  my-[16px]"><img src="../assets/images/Footer/playstore.svg"
+                            alt="Play Store">
+                        PLAY STORE</button>
+                    <img src="../assets/images/home page imag and icons/Samsung Galaxys.webp"
+                        alt="Samsung Galaxy download" class="mt-6">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    <!--Footer-->
+    <footer class="footer-main">
+
+        <div class="nav-footer ">
+            <img src="../assets/images/logo Finaince flow.svg" alt="logo of Finance Flow">
+            <ul class="footer-social-list ">
+                <li class="social_icons"><a href="https://www.instagram.com" target="_blank" rel="noopener"><img
+                            src="../assets/images/Footer/instag.svg" alt="instagram logo"></a></li>
+                <li class="social_icons"><a href="https://www.facebook.com" target="_blank" rel="noopener"><img
+                            src="../assets/images/Footer/facebook.svg" alt="facebook logo"></a></li>
+                <li class="social_icons"><a href="https://www.linkedin.com" target="_blank" rel="noopener"><img
+                            src="../assets/images/Footer/linkedin.svg" alt="LinkedIn logo"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-content-row max-md:gap-[56px] ">
+            <!-- MENU -->
+            <div class="footer-menu-wrapper">
+              
+                    <p class="footer-menu-title font-bold">MENU</p>
+                    <ul class="footer-menu-list">
+                        <li><a href="./Homepage.html" >HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="./PricingPage.html">PRICING</a></li>
+                        <li><a href="#">TOKENS</a></li>
+                        <li><a href="./BlogPage.html">BLOG</a></li>
+                        <li><a href="./ContactUsPage.html">CONTACT US</a></li>
+                    </ul>
+                
+            </div>
+
+            <!-- CARD -->
+            <div class="footer-card ">
+                <p class="footer-card-title">DOWNLOAD OUR APPLICATION</p>
+                <p class="footer-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris sed nulla
+                    integer</p>
+                <div class="footer-buttons ">
+                    <button class="btn-app-store max-md:w-full"><img src="../assets/images/Footer/appleicon.svg" alt="App Store"> APP
+                        STORE</button>
+                    <button class="btn-app-store max-md:w-full"><img src="../assets/images/Footer/playstore.svg" alt="Play Store">
+                        PLAY STORE</button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+        <p class="footer-copyright  ">All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>
