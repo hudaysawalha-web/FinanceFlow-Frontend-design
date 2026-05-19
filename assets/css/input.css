@@ -116,7 +116,7 @@
 
   /* ---------- Feature & Pricing Sections ---------- */
   .features-cards {
-    @apply flex flex-col items-start gap-4 pb-[48px];
+    @apply flex flex-col items-start gap-4 pb-[48px] ;
   }
 
   .pricing-cards {
@@ -265,7 +265,7 @@
     }
 
     .features-cards {
-      @apply grid grid-cols-4 gap-5 py-12 px-35;
+      @apply flex flex-row gap-6.75 py-12 px-35;
     }
 
     .card-protofolio {
