@@ -40,15 +40,15 @@
 
   /* ---------- Buttons ---------- */
   .btn-download {
-    @apply bg-blue rounded-full px-8 py-6.5 text-base/4 font-bold tracking-[1.6px] uppercase hover:bg-hover-button transition-colors duration-300 w-full flex items-center justify-center gap-2;
+    @apply bg-blue rounded-full px-8 py-6.5 text-base/4 font-bold tracking-[1.6px] uppercase hover:bg-hover-button transition-colors duration-300 w-full flex items-center justify-center gap-2 cursor-pointer;
   }
 
   .btn-secondary {
-    @apply bg-white/10 rounded-full px-8 py-6.5 text-base/4 font-bold tracking-[1.6px] uppercase hover:bg-blue/50 transition-colors duration-300 w-full flex items-center justify-center gap-2;
+    @apply bg-white/10 rounded-full px-8 py-6.5 text-base/4 font-bold tracking-[1.6px] uppercase hover:bg-blue/50 transition-colors duration-300 w-full flex items-center justify-center gap-2 cursor-pointer;
   }
 
   .btn-app-store {
-    @apply bg-[#2563EB] text-white text-base font-bold tracking-[0.9px] uppercase py-6.75 px-8 rounded-full border-none cursor-pointer transition-all hover:bg-[#1E4BD2] active:scale-[0.98] w-[210px] flex items-center justify-center gap-2;
+    @apply bg-[#2563EB] text-white text-base font-bold tracking-[0.9px] uppercase py-6.75 px-8 rounded-full border-none cursor-pointer transition-all hover:bg-[#1E4BD2] active:scale-[0.98] w-[210px] flex items-center justify-center gap-2 cursor-pointer;
   }
 
   /* ---------- Header & Hero ---------- */
@@ -60,9 +60,16 @@
 
   /* ---------- Filter ---------- */
   .filter {
-    @apply rounded-[40px] px-6 py-[11px] text-base/6.5 font-normal w-full flex items-center justify-center gap-2;
+    @apply rounded-[40px] px-6 py-[11px] text-base/6.5 font-normal w-full flex items-center justify-center gap-2 hover:bg-dark-blue transition-all duration-150 cursor-pointer;
   }
 
+  .filter-active {
+  @apply bg-blue ;
+}
+
+.filter-inactive {
+  @apply bg-white/10 ;
+}
 
 
   /* ---------- Cards (General) ---------- */
@@ -165,6 +172,8 @@
     @apply text-[28px] font-bold leading-[30px] tracking-[0.28px] pr-[28px];
   }
 
+  
+
   /* ---------- Forms ---------- */
   .form-group {
     @apply flex flex-col items-start gap-3 w-full;
@@ -187,12 +196,6 @@
     @apply flex justify-between py-6 border-b border-b-white/20;
   }
 
-  .qustion h3 {
-    font-size: 28px;
-    line-height: 30px;
-    font-weight: bold;
-    letter-spacing: 0.28px;
-  }
 
   /* ---------- Footer ---------- */
   .footer-main {
@@ -401,7 +404,11 @@
   #menu-toggle:checked~.nav_container .menu-close {
     @apply max-md:flex;
   }
+
+  
 }
+
+
 
 /* BASE STYLES */
 @layer base {
