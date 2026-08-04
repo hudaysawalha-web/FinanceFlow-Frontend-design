@@ -26,8 +26,11 @@ const menu = document.querySelector('[data-mobile-menu-list]');
 
 menuToggle.addEventListener('click', () => {
 
-    menu.classList.toggle('hidden');
-    document.getElementById('menu-icon').innerHTML = menu.classList.contains('hidden') ? '<img src="./assets/images/menu.svg" alt="menu">' : '<img src="./assets/images/x menu.svg" alt="close">';
-    console.log('Menu toggled');
+menu.classList.toggle('hidden');
+    document.getElementById('menu-icon').innerHTML = menu.classList.contains('hidden')
+        ? '<img src="/assets/images/menu.svg" alt="menu">'
+        : '<img src="/assets/images/x menu.svg" alt="close">';
 
 });
+
+

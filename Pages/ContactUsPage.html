@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>FinanceFlow</title>
 
@@ -43,24 +44,29 @@
                 </div>
             </nav>
 
-            <!-- Download button (desktop only) -->
-           <button class="btn-download block max-lg:hidden">
-                DOWNLOAD APP
-            </button>
+ <div class="flex gap-4">
+                <!-- Download button (desktop only) -->
+                <button class="btn-download hidden md:block">
+                    DOWNLOAD APP
+                </button>
 
-            <!-- Mobile menu icons -->
-            <label for="menu-toggle"
-                class="menu-open cursor-pointer hidden max-lg:flex bg-blue px-2.5 pt-3.25 pb-3 rounded-full items-center justify-center">
-                <img src="../assets/images/menu.svg" alt="menu">
-            </label>
-            <label for="menu-toggle"
-                class="menu-close cursor-pointer hidden bg-blue px-2.5 pt-3.25 pb-3 rounded-full items-center justify-center">
-                <img src="../assets/images/x menu.svg" alt="close menu">
-            </label>
+                <button id="theme-toggle" type="button" class="btn-secondary w-15 h-15" aria-label="Toggle theme">
+                    <div id="theme-icon">
+                        <i class="fa-solid fa-brush text-2xl"></i>
+                    </div>
+                </button>
+                <!-- Mobile menu icons -->
+                <button data-menu-toggle class="
+              lg:hidden bg-blue felx rounded-full items-center justify-center w-15 h-15">
+                    <div id="menu-icon" class="flex items-center justify-center w-15 h-15">
+                        <img src="/assets/images/x menu.svg" alt="close menu">
+                    </div>
+                </button>
+            </div>
         </div>
 
         <!-- Mobile dropdown menu -->
-        <div class="hidden peer-checked:max-lg:block w-full px-11.25 mt-6">
+        <div data-mobile-menu-list class=" md:hidden  w-full px-11.25 mt-6">
             <ul class="flex flex-col items-center gap-10">
                 <li><a class="nav-linklist " href="../index.html">HOME</a></li>
                 <li><a class="nav-linklist " href="#">ABOUT</a></li>
@@ -228,7 +234,9 @@
         <hr class="footer-divider">
         <p class="footer-copyright  ">All rights reserved</p>
     </footer>
+<script src="/main.js">
 
+    </script>
 </body>
 
 </html>
