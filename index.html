@@ -16,8 +16,8 @@
 
 <body class="color-bg ">
     <header class="header-main  ">
-  
-        
+
+
 
         <div class="nav_container">
             <nav class="flex items-center gap-8">
@@ -52,22 +52,24 @@
                         <i class="fa-solid fa-brush text-2xl"></i>
                     </div>
                 </button>
-
+                <!-- Mobile menu icons -->
+                <button data-menu-toggle class="
+              lg:hidden bg-blue felx rounded-full items-center justify-center w-15 h-15">
+                    <div id="menu-icon" class="flex items-center justify-center w-15 h-15">
+                        <img src="./assets/images/menu.svg" alt="menu">
+                    </div>
+                </button>
             </div>
 
 
-            <!-- Mobile menu icons -->
-            <button data-menu-toggle class="
-              block lg:hidden bg-blue px-2.5 pt-3.25 pb-3 rounded-full items-center justify-center">
-                <img src="./assets/images/menu.svg" alt="menu">
-            </button>
-         <!--<button class="menu-close cursor-pointer hidden bg-blue px-2.5 pt-3.25 pb-3 rounded-full items-center justify-center">
+
+            <!--<button class="menu-close cursor-pointer hidden bg-blue px-2.5 pt-3.25 pb-3 rounded-full items-center justify-center">
                 <img src="./assets/images/x menu.svg" alt="close menu">
             </button>-->
         </div>
 
         <!-- Mobile dropdown menu -->
-        <div class=" lg:hidden  w-full px-11.25 mt-6">
+        <div data-mobile-menu-list class=" lg:hidden  w-full px-11.25 mt-6">
             <ul class="flex flex-col items-center gap-10">
                 <li><a class="nav-linklist nav-link-active" href="./index.html">HOME</a></li>
                 <li><a class="nav-linklist " href="#">ABOUT</a></li>

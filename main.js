@@ -14,17 +14,20 @@ function applyTheme(theme) {
 
 themetoggle.addEventListener('click', () => {
     const newTheme = html.classList.contains('green') ? 'blue' : 'green';
-    localStorage.setItem('theme',newTheme);
+    localStorage.setItem('theme', newTheme);
     applyTheme(newTheme);
 })
 
-const savedTheme= localStorage.getItem('theme') || 'blue';
+const savedTheme = localStorage.getItem('theme') || 'blue';
 applyTheme(savedTheme);
 
-const menuToggle = document.querySelector('[menu-toggle]');
-const menu = document.querySelector('[mobile-menu-list]');
+const menuToggle = document.querySelector('[data-menu-toggle]');
+const menu = document.querySelector('[data-mobile-menu-list]');
 
 menuToggle.addEventListener('click', () => {
+
     menu.classList.toggle('hidden');
-    menuToggle.classList.toggle('menu-open');
+    document.getElementById('menu-icon').innerHTML = menu.classList.contains('hidden') ? '<img src="./assets/images/menu.svg" alt="menu">' : '<img src="./assets/images/x menu.svg" alt="close">';
+    console.log('Menu toggled');
+
 });
